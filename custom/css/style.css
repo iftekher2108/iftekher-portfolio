@@ -10,8 +10,23 @@
     --bg-color:#6495ED;
 }
 
-body {
+body{
+    position: relative;
+}
 
+body::before {
+    content: "";
+    position: absolute;
+/* iftekher protfolio website\image\background.jpg */
+    background:url(/image/background.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-attachment: fixed; 
+    top: 0;
+    z-index: -10;
+    opacity: 0.3;
 }
 
 nav {
@@ -136,39 +151,21 @@ nav {
     width: 22ch;
   }
 }
-.skills-content-1 {
+
+.skills-content {
     background: var(--bg-color);
-    top:0;
-    display: block;
-    transform: translateY(100%);
-    z-index: -1;
-
-}
-.skills-content-2 {
-    background: #e3e8f3;
 }
 
-
-
-@media (max-width:540px) {
-    /* .skills-items {
-        transform: translateY(-20%);
-    } */
-
-    .skills-content-1 {
-        display: none;
-    }
+.skills-items {
+    border-radius: 1rem !important;
+    overflow: hidden;
 }
 
 .skills-items .items {
-    top:0;
     transition: all 0.3s ease-in-out; 
-    z-index: 1;
-    
 }
 
 .skills-items .items:hover {
-    /* border: 5px solid var(--bg-color); */
     box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
     -webkit-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
     -moz-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
@@ -189,37 +186,49 @@ nav {
     background-position: center;
     border-radius: 1rem;
     overflow: hidden;
-}
-.gallery-photo .p-0{
-    border-radius: 1rem;
-    filter: brightness(125%);
-}
-.gallery-photo .p-0:hover {
-    position: relative;
-    top: 0;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;;
+    filter: brightness(90%);
 }
 
-.gallery-photo .p-0::before {
-    content: "";
-    position: relative;
-    border-radius: 1rem;
-    transition: all 0.3s ease-in-out;;
+
+.gallery-photo img:hover {
+    filter: brightness(120%) contrast(120%);
+
 }
 
-.gallery-photo .p-0:hover::before{ 
+
+.skill-title {
+    position: relative;
+
+}
+.skill-title::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 1rem;
     background: #000;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    opacity: 0.3;
+    left: -10%;
+    top:50%;
+    height: 5%;
+    width: 50%;
+}
+.skill-title::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    right: -10%;
+    top:50%;
+    height: 5%;
+    width: 50%;
+}
+
+.skill-content i {
+    font-size: 2rem ;
+}
 
 
 
+
+.footer-content h2{
+    transition: all 0.3s ease-in-out;
+}
+.footer-content h2:hover {
+    color: var(--bg-color);
 }
