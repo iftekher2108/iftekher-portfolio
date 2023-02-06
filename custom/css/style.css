@@ -140,7 +140,7 @@ nav {
     background: var(--bg-color);
     top:0;
     display: block;
-    transform: translateY(125%);
+    transform: translateY(100%);
     z-index: -1;
 
 }
@@ -177,3 +177,49 @@ nav {
 /* .skills-items .icon{
     font-size: 30px;
 } */
+
+
+
+
+
+.gallery-photo img {
+    aspect-ratio:1;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.gallery-photo .p-0{
+    border-radius: 1rem;
+    filter: brightness(125%);
+}
+.gallery-photo .p-0:hover {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;;
+}
+
+.gallery-photo .p-0::before {
+    content: "";
+    position: relative;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;;
+}
+
+.gallery-photo .p-0:hover::before{ 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.3;
+
+
+
+}
