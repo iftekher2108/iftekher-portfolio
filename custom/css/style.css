@@ -86,7 +86,7 @@ nav {
 
     border-radius: 50% !important;
 
-    color: black !important;
+    color: var(--bg-color) !important;
     background: white;
     animation: scale 0.7s ease-in-out infinite alternate;
 }
@@ -98,6 +98,14 @@ nav {
         transform: scale(1);
     }
  }
+
+
+.content-section h2,.gallery-title h1 {
+    border-bottom: 2px solid;
+}
+
+
+
 
 
 .skill-group {
@@ -134,7 +142,7 @@ nav {
 }
 
 
-.about-content h3 {
+.about-content h3,.contact-image h3 {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
@@ -198,12 +206,13 @@ nav {
 
 .skill-title {
     position: relative;
+    color: #6495ED;
 
 }
 .skill-title::before {
     content: "";
     position: absolute;
-    background: #000;
+    background: var(--bg-color);
     left: -10%;
     top:50%;
     height: 5%;
@@ -212,14 +221,14 @@ nav {
 .skill-title::after {
     content: "";
     position: absolute;
-    background: #000;
+    background: var(--bg-color);
     right: -10%;
     top:50%;
     height: 5%;
     width: 50%;
 }
 
-.skill-content i {
+.skill-content i,.contact-image i {
     font-size: 2rem ;
 }
 
@@ -230,5 +239,38 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 .footer-content h2:hover {
+    color: var(--bg-color);
+}
+
+
+
+
+.contact-image :is(.gmail,.whatsapp) {
+    background: #f1f1f1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.contact-image :is(.gmail,.whatsapp):hover {
+    background:#6495ED;
+    color: white;
+}
+
+
+.title span {
+    background: var(--bg-color);
+    color: white;
+}
+
+
+
+button.input-button {
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.input-button:hover {
+    background: white;
     color: var(--bg-color);
 }
