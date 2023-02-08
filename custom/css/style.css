@@ -276,8 +276,13 @@ button.input-button:hover {
     color: var(--bg-color);
 }
 
-
-
+button.download {
+    transition: all 0.3s ease-in-out;
+}
+button.download:hover {
+    color: var(--bg-color);
+    background: white;
+}
 
 
 .footer-menu a {
