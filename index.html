@@ -18,15 +18,15 @@
 <body>
     <header>
         <nav id="section-content" class="p-1 d-flex flex-column align-items-center gap-2 rounded-5">
-            <li class="list-group-item"><a href="#home" class="nav-link px-2 py-1 rounded-circle active"><i
+            <li class="list-group-item"><a href="#home" title="Home" class="nav-link px-2 py-1 rounded-circle active"><i
                         class="fa-solid fa-user"></i> <span class="sr-only">(current)</span></a></li>
-            <li class="list-group-item"><a href="#about-me" class="nav-link px-2 py-1 rounded-circle"> <i
+            <li class="list-group-item"><a href="#about-me" title="About Me" class="nav-link px-2 py-1 rounded-circle"> <i
                         class="fa-brands fa-servicestack"></i></a></li>
-            <li class="list-group-item"><a href="#gallery" class="nav-link px-2 py-1 rounded-circle"> <i
+            <li class="list-group-item"><a href="#gallery" title="Gallery" class="nav-link px-2 py-1 rounded-circle"> <i
                         class="fa-regular fa-image"></i></a></li>
-            <li class="list-group-item"><a href="#skill" class="nav-link px-2 py-1 rounded-circle"> <i
+            <li class="list-group-item"><a href="#skill" title="Learned Skill" class="nav-link px-2 py-1 rounded-circle"> <i
                         class="fa-solid fa-user-tie"></i></a></li>
-            <li class="list-group-item"><a href="#contact" class="nav-link px-2 py-1 rounded-circle"> <i
+            <li class="list-group-item"><a href="#contact" title="Contact" class="nav-link px-2 py-1 rounded-circle"> <i
                         class="fa-solid fa-network-wired"></i></a></li>
         </nav>
         <div class="d-flex justify-content-between m-0">
@@ -88,15 +88,15 @@
             </div>
 
             <div class="skills-content px-5 py-3">
-                <div class="skills-items row text-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 bg-white p-3 my-sm-2 items">
+                <div class="skills-items d-lg-flex justify-content-evenly align-items-center text-center">
+                    <div class="bg-white p-3 px-5 my-2 items">
                         <div class="icon fs-1">
                             <i class="fa-solid fa-certificate"></i>
                         </div>
                         <h2 class="">Experience</h1>
                             <small class="">6+ month</small>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 bg-white p-3 my-sm-2 items ">
+                    <div class="bg-white p-3 px-5 my-2 items">
 
                         <div class="icon fs-1">
                             <i class="fa-solid fa-bars-progress"></i>
@@ -105,7 +105,7 @@
                             <small class="">6+ completed</small>
 
                     </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-12 bg-white p-3 my-sm-2 items">
+                    <div class="bg-white p-3 px-5 my-2 items">
                         <div class="icon fs-1">
                             <i class="fa-solid fa-user-group"></i>
                         </div>
@@ -125,7 +125,7 @@
         <hr>
         <!-- =============================this is gallery section start here============================================== -->
         <div id="gallery" class="overflow-hidden bg-white">
-            <div class="gallery-title px-5">
+            <div class="gallery-title p-5">
                 <h1 class="text-center pb-2" style="color:var(--bg-color); border-color: var(--bg-color);">Gallery</h1>
                 <p class="text-secondary text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Doloremque,
@@ -165,7 +165,7 @@
 
         <!-- ========================================this is gallery section end here================================================== -->
 
-
+<!-- ===============================================this is skill section start here============================================== -->
         <div id="skill" class="m-0">
 
             <div class="skill-content m-0 mt-2 text-center overflow-hidden">
@@ -173,7 +173,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatum?</p>
             </div>
             <div class="skill-content row p-5 m-0">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                     <div class="html">
 
                         <i class="fa-brands fa-html5" style="color:#DD4B25;"></i>
@@ -215,8 +215,8 @@
 
                         <div class="progress" role="progressbar" aria-label="example" aria-valuenow="75"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped" style="width: 80%; background: #258CB2;">
-                                80%</div>
+                            <div class="progress-bar progress-bar-striped" style="width: 75%; background: #258CB2;">
+                                75%</div>
                         </div>
                     </div>
 
@@ -261,8 +261,14 @@
 
             </div>
         </div>
+<!-- ====================================================this is skill section end here========================================================== -->
+
+
         <hr>
 
+
+
+        <!-- =============================================this is contact section start here==================================================== -->
         <div id="contact" class="bg-white">
             <div class="title vstack text-center">
                 <span class="fs-2 fw-bolder p-2">Connect With Me</span>
@@ -318,15 +324,11 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
-
-
-
-
-
             </div>
         </div>
+
+<!-- ===================================================this is contact section end here========================================================================== -->
         <hr>
 
 
@@ -337,14 +339,28 @@
 
 
 
-
+<!-- ========================footer section start here=============================================== -->
     <footer class="bg-dark text-white">
         <div class="footer-content p-5">
-            <h2 class="text-center">Iftekher Mahmud Pervez</h2>
-            <p class="text-center">&copy;Iftekher Mahmud Pervez 2020 - <span>2022</span></p>
+            <div class="footer-menu fw-bold d-lg-flex justify-content-center gap-4 my-lg-3 my-sm-1">
+                <a href="#home" class="nav-link my-sm-1 my-lg-0"> Home</a>
+                <a href="#about-me" class="nav-link my-sm-1 my-lg-0"> About Me</a>
+                <a href="#gallery" class="nav-link my-sm-1 my-lg-0"> Gallery</a>
+                <a href="#skill" class="nav-link my-sm-1 my-lg-0"> Learned Skill</a>
+                <a href="#contact" class="nav-link my-sm-1 my-lg-0"> Contact</a>
+
+
+            </div>
+
+
+
+            <h2 class="text-center fw-bold">Iftekher Mahmud Pervez</h2>
+            <p class="text-center">&copy; Iftekher Mahmud Pervez  2020 - <span>2022</span></p>
         </div>
 
     </footer>
+
+<!-- ========================footer section end here================================================ -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

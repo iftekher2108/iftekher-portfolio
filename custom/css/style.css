@@ -165,11 +165,12 @@ nav {
 }
 
 .skills-items {
-    border-radius: 1rem !important;
+
     overflow: hidden;
 }
 
 .skills-items .items {
+    border-radius: 1rem !important;
     transition: all 0.3s ease-in-out; 
 }
 
@@ -272,5 +273,16 @@ button.input-button {
 
 button.input-button:hover {
     background: white;
+    color: var(--bg-color);
+}
+
+
+
+
+
+.footer-menu a {
+    transition: all 0.3s ease-in-out;
+}
+.footer-menu a:hover {
     color: var(--bg-color);
 }
