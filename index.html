@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -49,8 +50,8 @@
     <main data-bs-spy="scroll" data-bs-target="#section-content" data-bs-smooth-scroll="true" class="scrollspy-example"
         tabindex="0">
         <div id="home" class="container-fluid">
-            <div class="row py-lg-5 py-sm-5 m-0">
-                <div class="hero-content col-lg-6 col-sm-12 py-sm-3 p-lg-5 my-lg-5 my-sm-3">
+            <div class="row py-lg-5 py-sm-5 m-0 overflow-hidden">
+                <div class="hero-content col-lg-6 col-sm-12 py-sm-3 p-lg-5 my-lg-5 my-sm-3" data-aos="fade-right">
                     <h3 class="text-capitalize"> HI, My name is </h3>
                     <h2 class="text-uppercase fw-bold" style="color:var(--bg-color);">iftekher mahmud pervez.</h2>
                     <p>I am a Designer / Fornt End developer living in Bangladesh. i enjoy create  everything form small websites to attractive web sites. If you are looking for web presence or an employer to hire. You can get in touch in here.</p>
@@ -69,7 +70,7 @@
                         <button class="btn btn-outline-secondary fw-bold px-4"><a class="nav-link" href=""> Get CV</a></button>
                     </div>
                 </div>
-                <div class="hero-image col-lg-6 col-sm-12 m-0 p-0">
+                <div class="hero-image col-lg-6 col-sm-12 m-0 p-0" data-aos="fade-left">
                     <img src="image/1.jpg" class="img-fluid rounded-3" alt="hero-image">
                 </div>
             </div>
@@ -77,7 +78,7 @@
         <hr>
         <div id="about-me">
             <div class="about-content" style="background:var(--bg-color);">
-                <div class="content-section p-5">
+                <div class="content-section p-5" data-aos="fade-up">
                     <h2 class="text-center pb-2 text-white border-white">About Me</h2>
                     <img src="image/iftekher.JPG" class="img-fluid object-fit-cover img-thumbnail my-3 p-0 m-0"
                         alt="about-me">
@@ -91,7 +92,7 @@
                 </div>
             </div>
             <div class="skills-content px-5 py-3">
-                <div class="skills-items d-lg-flex justify-content-evenly align-items-center text-center">
+                <div class="skills-items d-lg-flex justify-content-evenly align-items-center text-center" data-aos="fade-up" data-aos-delay="50">
                     <div class="bg-white p-3 px-4 my-2 items">
                         <div class="icon fs-1">
                             <i class="fa-solid fa-certificate"></i>
@@ -131,7 +132,7 @@
                     Doloremque,
                     mollitia.</p>
             </div>
-            <div class="gallery-content">
+            <div class="gallery-content" data-aos="zoom-in">
                 <div class="gallery-photo row p-3 m-0">
                     <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/2.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
@@ -193,18 +194,13 @@
         <!-- ===============================================this is skill section start here============================================== -->
         <div id="skill" class="m-0">
 
-            <div class="skill-content m-0 mt-2 text-center overflow-hidden">
+            <div class="skill-content m-0 mt-2 text-center overflow-hidden" data-aos="zoom-in">
                 <h2 class="skill-title">learned skills</h2>
            
            
-           
-           
-           
-           
-           
             </div>
-            <div class="skill-content row p-5 m-0">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+            <div class="skill-content row p-5 m-0 overflow-hidden">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3" data-aos="fade-left">
                     <div class="html">
 
                         <i class="fa-brands fa-html5" style="color:#DD4B25;"></i>
@@ -253,7 +249,7 @@
 
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
                     <div class="javascript">
 
                         <i class="fa-brands fa-square-js" style="color:#E4D04B;"></i>
@@ -301,11 +297,11 @@
 
         <!-- =============================================this is contact section start here==================================================== -->
         <div id="contact" class="bg-white">
-            <div class="title vstack text-center">
+            <div class="title vstack text-center" data-aos="zoom-in">
                 <span class="fs-2 fw-bolder p-2">Connect With Me</span>
             </div>
-            <div class="contact-content row p-lg-5 p-sm-3 m-0">
-                <div class="contact-image col-lg-6 col-sm-12 p-lg-5 p-sm-0 my-2">
+            <div class="contact-content row p-lg-5 p-sm-3 m-0 overflow-hidden">
+                <div class="contact-image col-lg-6 col-sm-12 p-lg-5 p-sm-0 my-2" data-aos="fade-right">
                     <h3 class="vstack mx-auto">Iftekher Mahmud Pervez</h3>
                     <div class="gmail-whatsapp hstack gap-2 row p-lg-2 p-sm-1 m-0">
 
@@ -328,7 +324,7 @@
 
 
 
-                <div class="contact-info col-lg-6 col-sm-12 rounded-3" style="background:#6495ED;">
+                <div class="contact-info col-lg-6 col-sm-12 rounded-3" style="background:#6495ED;" data-aos="fade-left">
 
                     <div class="inf-section">
                         <form action="https://formspree.io/f/mqkoqqjw" method="post" class="py-5">
@@ -401,6 +397,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+           AOS.init({
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate',
+  offset: 120,
+  delay: 200,
+  duration: 500,
+  easing: 'ease-in-out',
+  mirror:true,
+  once: false
+           });
+
+</script>
     <script src="custom/js/main.js"></script>
 </body>
 
