@@ -215,9 +215,13 @@ nav {
 
 }
 
-
+.social a i {
+    padding: 0px !important;
+}
 .social a {
     background: var(--bg-color);
+    padding:10px 15px;
+    border-radius: 50%;
 
 }
 
