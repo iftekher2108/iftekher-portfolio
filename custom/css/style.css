@@ -1,15 +1,22 @@
 
-
+/* universal paddding margin reset */
 * {
     padding: 0;
     margin: 0;
 }
+/* universal paddding margin reset */
 
 
+
+/* variable collection */
 :root {
     --bg-color:#6495ED;
 }
 
+/* variable collection */
+
+
+/* body */
 body{
     position: relative;
 }
@@ -28,7 +35,13 @@ body::before {
     z-index: -10;
     opacity: 0.3;
 }
+/* body */
 
+
+
+
+
+/* nav section */
 nav {
     background:cornflowerblue;
     color: white;
@@ -51,13 +64,37 @@ nav {
  transform: scale(1.2);
 }
 
+
+
+
+.active {
+
+    border-radius: 50% !important;
+
+    color: var(--bg-color) !important;
+    background: white;
+    animation: scale 0.7s ease-in-out infinite alternate;
+}
+ @keyframes scale {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+ }
+
+/* nav section */
+
+
 /* #home,#service,#gallery,#skill,#contact {
     height: 100vh;
 } */
+
+/* hero section */
 .hero {
     overflow: hidden;
 }
-
 
 .hero-content {
     overflow: hidden;
@@ -82,30 +119,6 @@ nav {
     border-right: 2px solid slategray !important;
 }
 
-.active {
-
-    border-radius: 50% !important;
-
-    color: var(--bg-color) !important;
-    background: white;
-    animation: scale 0.7s ease-in-out infinite alternate;
-}
- @keyframes scale {
-    0% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
- }
-
-
-.content-section h2,.gallery-title h1 {
-    border-bottom: 2px solid;
-}
-
-
-
 
 
 .skill-group {
@@ -124,7 +137,6 @@ nav {
 
 }
 
-
 @keyframes flow {
 
     25% {
@@ -139,6 +151,14 @@ nav {
     0%,100%  {
         transform: translateY(-80%);
     }
+}
+/* hero section */
+
+
+
+/* about me section */
+.content-section h2,.gallery-title h1 {
+    border-bottom: 2px solid;
 }
 
 
@@ -171,10 +191,14 @@ nav {
 
 .skills-items .items {
     border-radius: 1rem !important;
-    transition: all 0.3s ease-in-out; 
+    color: var(--bg-color);
+    transition: all 0.3s ease-in-out;
+
 }
 
 .skills-items .items:hover {
+    background: var(--bg-color) !important; 
+    color: white;
     box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
     -webkit-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
     -moz-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
@@ -186,8 +210,23 @@ nav {
 
 
 
+button.download {
+    transition: all 0.3s ease-in-out;
+}
+button.download:hover {
+    color: var(--bg-color);
+    background: white;
+}
 
 
+/* about me section */
+
+
+
+
+
+
+/* gallery image section */
 .gallery-photo img {
     aspect-ratio:1;
     position: relative;
@@ -198,9 +237,7 @@ nav {
     filter: brightness(90%);
     z-index: 0;
 }
-.gallery-photo img {
 
-}
 
 .social-pos {
     position: relative;
@@ -239,8 +276,6 @@ nav {
 
 }   
 
-
-
 .gallery-photo .social-pos:hover .social{
     z-index: 2;
     transform:translate(-50%,-50%) scale(1);
@@ -248,7 +283,12 @@ nav {
     
 }
 
+/* gallery image section */
 
+
+
+
+/* skill section */
 .skill-title {
     position: relative;
     color: #6495ED;
@@ -276,20 +316,12 @@ nav {
 .skill-content i,.contact-image i {
     font-size: 2rem ;
 }
+/* skill section */
 
 
 
 
-.footer-content h2{
-    transition: all 0.3s ease-in-out;
-}
-.footer-content h2:hover {
-    color: var(--bg-color);
-}
-
-
-
-
+/* contact section */
 .contact-image :is(.gmail,.whatsapp) {
     background: #f1f1f1;
     transition: all 0.5s ease-in-out;
@@ -307,8 +339,6 @@ nav {
     color: white;
 }
 
-
-
 button.input-button {
     font-weight: bold;
     letter-spacing: 3px;
@@ -319,15 +349,17 @@ button.input-button:hover {
     background: white;
     color: var(--bg-color);
 }
+/* contact section */
 
-button.download {
+
+
+/* footer section */
+.footer-content h2{
     transition: all 0.3s ease-in-out;
 }
-button.download:hover {
+.footer-content h2:hover {
     color: var(--bg-color);
-    background: white;
 }
-
 
 .footer-menu a {
     transition: all 0.3s ease-in-out;
@@ -335,3 +367,4 @@ button.download:hover {
 .footer-menu a:hover {
     color: var(--bg-color);
 }
+/* footer section */
