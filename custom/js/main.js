@@ -8,6 +8,13 @@ console.log("iftekher mahmud pervez")
 
 
 
+let intro =document.querySelector('.intro');
+console.log(intro)
+
+setTimeout(() => {
+    intro.classList.remove('intro-window');
+    intro.classList.add('hide');
+}, 9000);
 
 
 

@@ -17,8 +17,16 @@
 </head>
 
 <body>
+
+<div class="intro-window intro d-flex align-items-center justify-content-center bg-dark">
+<h1 class="text-uppercase text-white">
+    iftekher mahmud pervez
+</h1>
+
+</div>
+
     <header>
-        <nav id="section-content" class="p-1 d-flex flex-column align-items-center gap-2 rounded-5">
+        <nav id="section-content" class="px-4 py-3 d-flex align-items-center gap-3 rounded-5">
             <li class="list-group-item"><a href="#home" title="Home" class="nav-link px-2 py-1 rounded-circle active"><i
                         class="fa-solid fa-user"></i> <span class="sr-only">(current)</span></a></li>
             <li class="list-group-item"><a href="#about-me" title="About Me" class="nav-link px-2 py-1 rounded-circle">
@@ -30,33 +38,22 @@
             <li class="list-group-item"><a href="#contact" title="Contact" class="nav-link px-2 py-1 rounded-circle"> <i
                         class="fa-solid fa-network-wired"></i></a></li>
         </nav>
-        <div class="d-flex justify-content-between px-2 m-0">
-            <h3>Portfolio</h3>
-            <div class="social-media d-flex flex-sm-wrap align-items-center justify-content-end gap-2 py-2">
-                <a href="https://www.facebook.com/mdiftekher.mahmud/" class="nav-link rounded-circle px-2 text-white">
-                    <i class="fa-brands fa-facebook-f"></i></a>
-                <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-instagram"></i></a> -->
-                <a href="https://wa.me/8801794607199" class="nav-link rounded-circle px-2 text-white"> <i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://github.com/iftekher2108" class="nav-link rounded-circle px-2 text-white"> <i
-                        class="fa-brands fa-github"></i></a>
-                <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-youtube"></i></a> -->
-                <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-linkedin"></i></a> -->
-           
-            </div>
-        </div>
+
     </header>
 
     <main data-bs-spy="scroll" data-bs-target="#section-content" data-bs-smooth-scroll="true" class="scrollspy-example"
         tabindex="0">
-        <div id="home" class="container-fluid">
+        <div id="home" class="container-fluid overflow-hidden">
+    
+            <div id="particles-js" style="height:150vh;"></div> 
+
             <div class="row py-lg-5 py-sm-5 m-0 overflow-hidden">
-                <div class="hero-content col-lg-6 col-sm-12 py-sm-3 p-lg-5 my-lg-5 my-sm-3" data-aos="fade-right">
+                <div class="hero-content col-lg-6 col-sm-12 py-sm-3 p-lg-5 my-lg-5 my-sm-3 m-0" data-aos="fade-right">
                     <h3 class="text-capitalize"> HI, My name is </h3>
                     <h2 class="text-uppercase fw-bold" style="color:var(--bg-color);">iftekher mahmud pervez.</h2>
                     <p>I am a Designer / Fornt End developer living in Bangladesh. i enjoy create  everything form small websites to attractive web sites. If you are looking for web presence or an employer to hire. You can get in touch in here.</p>
 
-                    <div class="skill-group">
+                    <div class="skill-group m-0">
                         <div class="skill-base d-flex flex-column gap-2">
                             <h3>Web developer</h3>
                             <h3>Wordpress developer</h3>
@@ -65,10 +62,6 @@
                         </div>
                     </div>
 
-                    <div class="buttun-group my-2">
-                        <button class="btn btn-outline-primary fw-bold px-4 my-2"><a class="nav-link" href="#contact"> Hire Me</a></button>
-                        <button class="btn btn-outline-secondary fw-bold px-4"><a class="nav-link" href=""> Get CV</a></button>
-                    </div>
                 </div>
                 <div class="hero-image col-lg-6 col-sm-12 m-0 p-0" data-aos="fade-left">
                     <img src="image/1.jpg" class="img-fluid rounded-3" alt="hero-image">
@@ -86,11 +79,36 @@
                     <h3 class="vstack mx-auto text-white">Iftekher Mahmud Pervez</h3>
                     <p class="text-center text-white-50"> I am a Designer / Fornt End developer living in Bangladesh. i enjoy create  everything form small websites to attractive web sites. If you are looking for web presence or an employer to hire. You can get in touch in here.
                     </p>
-                    <button class="download btn btn-primary text-center fw-bold vstack mx-auto px-4"><a href="#"
-                            class="nav-link">Download
-                            CV</a></button>
+                    
+                    <div class="buttun-group my-2 d-flex gap-2 align-items-center justify-content-center">
+                        <button class="btn btn-outline-primary fw-bold px-4 my-2"><a class="nav-link" href="#contact"> Hire Me</a></button>
+                        <button class="btn btn-outline-secondary fw-bold px-4"><a class="nav-link" href=""> Get CV</a></button>
+                    </div>
                 </div>
+
+                <div class="information text-white">
+                    <div class="row py-1 px-3 m-0">
+                        <div class="col lg-4 col sm-12">
+                            hello
+                        </div>
+                        
+                        
+                        <div class="col lg-4 col sm-12">
+                            hello
+                        </div>
+
+
+                        <div class="col lg-4 col sm-12">
+                            hello
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
+                
+
             <div class="skills-content px-5 py-3">
                 <div class="skills-items d-lg-flex justify-content-evenly align-items-center text-center" data-aos="fade-up" data-aos-delay="50">
                     <div class="bg-white p-3 px-4 my-2 items">
@@ -124,63 +142,61 @@
 
 
         <hr>
-        <!-- =============================this is gallery section start here============================================== -->
+        <!-- =============================this is project section start here============================================== -->
         <div id="gallery" class="overflow-hidden bg-white">
             <div class="gallery-title p-5">
-                <h1 class="text-center pb-2" style="color:var(--bg-color); border-color: var(--bg-color);">Gallery</h1>
+                <h1 class="text-center pb-2" style="color:var(--bg-color); border-color: var(--bg-color);">Projects</h1>
                 <p class="text-secondary text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Doloremque,
                     mollitia.</p>
             </div>
-            <div class="gallery-content" data-aos="zoom-in">
-                <div class="gallery-photo row p-3 m-0">
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+            <div class="project-content" data-aos="zoom-in">
+                <div class="project-photo row p-3 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/2.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-plus"></i> </a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i></a>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
 
-                        </div>
                     </div>
 
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/3.JPG" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-plus"></i> </a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
+
                     </div>
 
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/4.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">               
-                             <a class="nav-link text-white" href="#"> <i class="fa-solid fa-plus"></i></a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
                     </div>
 
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/5.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-plus"></i> </a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i> </a>
-                        </div>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
+
                     </div>
 
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/6.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">
-                            <a class="nav-link text-white" href="#"> <i class="fa-solid fa-plus"></i></a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i> </a>
-                        </div>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
+
                     </div>
 
-                    <div class="social-pos col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
                         <img src="image/7.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <div class="social d-flex gap-3 align-items-center justify-content-center">
-                           <a class="nav-link text-white" href="#"><i class="fa-solid fa-plus"></i> </a>
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                       <h2></h2>
+                       <p></p>
+                       <button class="btn btn-primary fw-bold vstack mx-auto py-1 px-3" style="background:var(--bg-color);"><a href="#" class="nav-link text-white">Live View</a></button>
+
                     </div>
 
 
@@ -189,7 +205,7 @@
             </div>
         </div>
 
-        <!-- ========================================this is gallery section end here================================================== -->
+        <!-- ========================================this is project section end here================================================== -->
 
         <!-- ===============================================this is skill section start here============================================== -->
         <div id="skill" class="m-0">
@@ -302,7 +318,7 @@
             </div>
             <div class="contact-content row p-lg-5 p-sm-3 m-0 overflow-hidden">
                 <div class="contact-image col-lg-6 col-sm-12 p-lg-5 p-sm-0 my-2" data-aos="fade-right">
-                    <h3 class="vstack mx-auto">Iftekher Mahmud Pervez</h3>
+                    <h3 class="vstack mx-auto" style="color:var(--bg-color)">Iftekher Mahmud Pervez</h3>
                     <div class="gmail-whatsapp hstack gap-2 row p-lg-2 p-sm-1 m-0">
 
                         <div class="gmail col-12 px-lg-5 px-sm-2 py-2 text-center rounded-4">
@@ -360,7 +376,6 @@
         </div>
 
         <!-- ===================================================this is contact section end here========================================================================== -->
-        <hr>
 
 
 
@@ -383,6 +398,20 @@
 
             </div>
 
+                <div class="social-media d-flex flex-sm-wrap align-items-center justify-content-center gap-4 py-2">
+                    <a href="https://www.facebook.com/mdiftekher.mahmud/" class="nav-link rounded-circle px-2 text-white">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="https://wa.me/8801794607199" class="nav-link rounded-circle px-2 text-white"> <i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/iftekher2108" class="nav-link rounded-circle px-2 text-white"> <i
+                            class="fa-brands fa-github"></i></a>
+                    <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-youtube"></i></a> -->
+                    <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-linkedin"></i></a> -->
+               
+                </div>
+
+
 
 
             <h2 class="text-center fw-bold">Iftekher Mahmud Pervez</h2>
@@ -397,8 +426,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="custom/js/main.js"></script>
+
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>    
+        <script>
            AOS.init({
   startEvent: 'DOMContentLoaded',
   initClassName: 'aos-init',
@@ -412,7 +451,6 @@
            });
 
 </script>
-    <script src="custom/js/main.js"></script>
 </body>
 
 </html>

@@ -1,40 +1,90 @@
-
 /* universal paddding margin reset */
 * {
     padding: 0;
     margin: 0;
 }
+
 /* universal paddding margin reset */
 
 
 
 /* variable collection */
 :root {
-    --bg-color:#6495ED;
+    --bg-color: #6495ED;
 }
 
 /* variable collection */
 
 
+/* intro window css */
+.intro-window {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    animation: close 3s ease-in-out 5s forwards;
+}
+
+.hide.d-flex.align-items-center.justify-content-center.bg-dark {
+    display: none !important;
+}
+
+.intro-window h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    border-right: 2px solid white;
+    animation: intro 4s ease-in-out forwards;
+
+}
+
+@keyframes intro {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 24ch;
+    }
+}
+
+@keyframes close {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 200%;
+    }
+}
+
+/* intro windows css */
+
+
+
+
 /* body */
-body{
+body {
     position: relative;
 }
 
 body::before {
     content: "";
     position: absolute;
-/* iftekher protfolio website\image\background.jpg */
-    background:url(background.jpg);
+    /* iftekher protfolio website\image\background.jpg */
+    background: url(background.jpg);
     height: 100%;
     width: 100%;
-    background-repeat:repeat-y;
+    background-repeat: repeat-y;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     top: 0;
     z-index: -10;
     opacity: 0.3;
 }
+
 /* body */
 
 
@@ -43,25 +93,28 @@ body::before {
 
 /* nav section */
 nav {
-    background:cornflowerblue;
+    background: rgba(100, 149, 237,0.7) ;
     color: white;
     width: fit-content;
     position: fixed;
-    top: 50%;
-    left: 2%;
-    transform: translateY(-50%);
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 50;
+    backdrop-filter: blur(10px);
 
 }
-.social-media a{
+
+.social-media a {
     display: flex;
     aspect-ratio: 1;
     align-items: center;
-    background:cornflowerblue;
+    background: rgb(100, 149, 237);
     transition: all 0.3s ease-in-out;
 }
+
 .social-media a:hover {
- transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 
@@ -75,14 +128,16 @@ nav {
     background: white;
     animation: scale 0.7s ease-in-out infinite alternate;
 }
- @keyframes scale {
+
+@keyframes scale {
     0% {
-        transform: scale(0.8);
-    }
-    100% {
         transform: scale(1);
     }
- }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
 
 /* nav section */
 
@@ -99,15 +154,17 @@ nav {
 .hero-content {
     overflow: hidden;
 }
+
 .hero-content h3 {
     position: relative;
 }
+
 .hero-content h3::after {
     content: "";
     position: absolute;
-    top:50%;
+    top: 50%;
     height: 2px;
-    margin-left:1%;
+    margin-left: 1%;
     width: 100%;
     background: #000;
 }
@@ -123,14 +180,15 @@ nav {
 
 .skill-group {
 
-   height: 2.5rem;
-   color: tomato;
-   text-transform: uppercase;
-   overflow: hidden;
-   /* border: 2px solid red; */
-   width: 100%;
-   
+    height: 2.5rem;
+    color: tomato;
+    text-transform: uppercase;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    width: 100%;
+
 }
+
 .skill-base {
     width: 100%;
     animation: flow 5s ease-in-out infinite alternate;
@@ -141,43 +199,51 @@ nav {
 
     25% {
         transform: translateY(-0.6%);
-    } 
+    }
+
     50% {
         transform: translateY(-25%);
-    } 
+    }
+
     75% {
         transform: translateY(-50%);
-    } 
-    0%,100%  {
+    }
+
+    0%,
+    100% {
         transform: translateY(-80%);
     }
 }
+
 /* hero section */
 
 
 
 /* about me section */
-.content-section h2,.gallery-title h1 {
+.content-section h2,
+.gallery-title h1 {
     border-bottom: 2px solid;
 }
 
 
-.about-content h3,.contact-image h3 {
+.about-content h3,
+.contact-image h3 {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
-    border-right: 2px solid white ;
+    border-right: 2px solid white;
     animation: type 4s ease-in-out infinite alternate;
 
 }
 
 @keyframes type {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 22ch;
-  }
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 22ch;
+    }
 }
 
 .skills-content {
@@ -197,26 +263,18 @@ nav {
 }
 
 .skills-items .items:hover {
-    background: var(--bg-color) !important; 
+    background: var(--bg-color) !important;
     color: white;
-    box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
-    -webkit-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
-    -moz-box-shadow: 0px 7px 40px -10px rgba(0,0,0,0.58);
+    box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
 
 }
+
 /* .skills-items .icon{
     font-size: 30px;
 } */
 
-
-
-button.download {
-    transition: all 0.3s ease-in-out;
-}
-button.download:hover {
-    color: var(--bg-color);
-    background: white;
-}
 
 
 /* about me section */
@@ -226,64 +284,23 @@ button.download:hover {
 
 
 
-/* gallery image section */
-.gallery-photo img {
-    aspect-ratio:1;
-    position: relative;
+/* project image section */
+.project-photo img {
+    aspect-ratio: 1;
     transition: all 0.3s ease-in-out;
     background-position: center;
     border-radius: 1rem;
     overflow: hidden;
-    filter: brightness(90%);
     z-index: 0;
 }
 
-
-.social-pos {
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
+.project-photo img:hover {
+    filter: brightness(120%);
+    transform: scale(0.95);
 }
 
-.gallery-photo img:hover {
-    filter: brightness(120%) contrast(120%);
-    transform: scale(0.9);
-    transition: all 0.3s ease-in-out;
 
-}
-
-.social a i {
-    padding: 0px !important;
-}
-.social a {
-    background: var(--bg-color);
-    padding:10px 15px;
-    border-radius: 50%;
-
-}
-
-.social-pos .social {
-    position: absolute;
-     top: 50%;
-     left: 50%;
-     background: rgba(255, 255, 255, 0.3);
-
-     height: 100%;
-     width: 100%;
-     transform: translate(-50%,-50%) scale(0);
-     z-index: -2;
-     transition: all 0.3s ease-in-out;
-
-}   
-
-.gallery-photo .social-pos:hover .social{
-    z-index: 2;
-    transform:translate(-50%,-50%) scale(1);
-
-    
-}
-
-/* gallery image section */
+/* project image section */
 
 
 
@@ -294,42 +311,46 @@ button.download:hover {
     color: #6495ED;
 
 }
+
 .skill-title::before {
     content: "";
     position: absolute;
     background: var(--bg-color);
     left: -25%;
-    top:50%;
+    top: 50%;
     height: 5%;
     width: 50%;
 }
+
 .skill-title::after {
     content: "";
     position: absolute;
     background: var(--bg-color);
     right: -25%;
-    top:50%;
+    top: 50%;
     height: 5%;
     width: 50%;
 }
 
-.skill-content i,.contact-image i {
-    font-size: 2rem ;
+.skill-content i,
+.contact-image i {
+    font-size: 2rem;
 }
+
 /* skill section */
 
 
 
 
 /* contact section */
-.contact-image :is(.gmail,.whatsapp) {
+.contact-image :is(.gmail, .whatsapp) {
     background: #f1f1f1;
     transition: all 0.5s ease-in-out;
 }
 
 
-.contact-image :is(.gmail,.whatsapp):hover {
-    background:#6495ED;
+.contact-image :is(.gmail, .whatsapp):hover {
+    background: #6495ED;
     color: white;
 }
 
@@ -349,14 +370,16 @@ button.input-button:hover {
     background: white;
     color: var(--bg-color);
 }
+
 /* contact section */
 
 
 
 /* footer section */
-.footer-content h2{
+.footer-content h2 {
     transition: all 0.3s ease-in-out;
 }
+
 .footer-content h2:hover {
     color: var(--bg-color);
 }
@@ -364,7 +387,56 @@ button.input-button:hover {
 .footer-menu a {
     transition: all 0.3s ease-in-out;
 }
+
 .footer-menu a:hover {
     color: var(--bg-color);
 }
+
 /* footer section */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    aspect-ratio: auto 375 / 667 !important;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#stats {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+} */
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
