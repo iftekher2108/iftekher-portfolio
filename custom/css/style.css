@@ -21,10 +21,11 @@
     top: 0;
     left: 0;
     position: fixed;
+    background: rgb(29, 20, 20);
     height: 100%;
     width: 100%;
     z-index: 100;
-    animation: close 3s ease-in-out 5s forwards;
+    animation: close 2.5s linear 5s forwards;
 }
 
 .hide.d-flex.align-items-center.justify-content-center.bg-dark {
@@ -52,11 +53,11 @@
 
 @keyframes close {
     0% {
-        top: 0%;
+        opacity: 1;
     }
 
     100% {
-        top: 200%;
+        opacity: 0;
     }
 }
 
@@ -74,7 +75,7 @@ body::before {
     content: "";
     position: absolute;
     /* iftekher protfolio website\image\background.jpg */
-    background: url(background.jpg);
+    background: url(background.png);
     height: 100%;
     width: 100%;
     background-repeat: repeat-y;
@@ -111,10 +112,11 @@ nav {
     align-items: center;
     background: rgb(100, 149, 237);
     transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 .social-media a:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 
@@ -409,6 +411,7 @@ button.input-button:hover {
 body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 canvas {
@@ -428,13 +431,9 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    overflow: hidden;
 }
 
-#stats {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-} */
 
 #stats {
     border-radius: 3px 3px 0 0;
