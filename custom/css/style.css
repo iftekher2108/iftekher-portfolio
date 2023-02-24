@@ -15,6 +15,22 @@
 
 /* variable collection */
 
+/* scrolling thumb */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background:#6495ED;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #407be9;
+}
+
+/* scrolling thumb */
 
 /* intro window css */
 .intro-window {
@@ -277,6 +293,32 @@ nav {
     font-size: 30px;
 } */
 
+.button-group button{
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-group button:nth-child(1) {
+background: rgb(4, 26, 87);;
+
+}
+
+.button-group button:nth-child(1):hover {
+    color: rgb(4, 26, 87);
+    background: #fff;
+}
+
+.button-group button:nth-child(2){
+    background: white;
+    color: tomato;
+
+}
+.button-group button:nth-child(2):hover {
+    color: white;
+    background: tomato;
+}
 
 
 /* about me section */
@@ -300,6 +342,17 @@ nav {
     filter: brightness(120%);
     transform: scale(0.95);
 }
+
+.project-photo button {
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.project-photo button:hover {
+    color: white;
+    background: tomato!important;
+}
+
+
 
 
 /* project image section */
@@ -405,17 +458,16 @@ button.input-button:hover {
 
 
 
+/* particales show css */
 
 
-/* ---- reset ---- */
 body {
-    margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 canvas {
-    aspect-ratio: auto 375 / 667 !important;
+    aspect-ratio: auto 300 / 567 !important;
     overflow-clip-margin: content-box !important;
     overflow: clip !important;
 }
@@ -423,15 +475,13 @@ canvas {
 /* ---- particles.js container ---- */
 #particles-js {
     position: absolute;
-    width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 
@@ -439,3 +489,5 @@ canvas {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
 }
+
+/* particales show css */
