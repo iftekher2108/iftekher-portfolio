@@ -339,7 +339,6 @@ background: rgb(4, 26, 87);;
 }
 
 .project-photo img:hover {
-    filter: brightness(120%);
     transform: scale(0.95);
 }
 
