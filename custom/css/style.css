@@ -122,26 +122,14 @@ nav {
 
 }
 
-.social-media a {
-    display: flex;
-    aspect-ratio: 1;
-    align-items: center;
-    background: rgb(100, 149, 237);
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.2);
-}
-
-.social-media a:hover {
-    transform: scale(1.5);
-}
 
 
 
 
 .active {
 
-    border-radius: 50% !important;
 
+    border-radius: 5px !important;
     color: var(--bg-color) !important;
     background: white;
     animation: scale 0.7s ease-in-out infinite alternate;
@@ -417,6 +405,13 @@ background: rgb(4, 26, 87);;
 button.input-button {
     font-weight: bold;
     letter-spacing: 3px;
+    background: var(--bg-color);
+    border: none;
+    border-radius: 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    outline: none;
+    box-shadow: none;
     transition: all 0.3s ease-in-out;
 }
 
@@ -424,6 +419,20 @@ button.input-button:hover {
     background: white;
     color: var(--bg-color);
 }
+label {
+    color: white !important;
+}
+form input,form textarea {
+    background: var(--bg-color)!important;
+    border: none !important;
+    color: white!important;
+    border-radius: none !important;
+    border-bottom: 1px solid white!important;
+    box-shadow: none !important;
+    
+}
+
+
 
 /* contact section */
 
@@ -445,6 +454,25 @@ button.input-button:hover {
 .footer-menu a:hover {
     color: var(--bg-color);
 }
+
+.social-media a {
+    display: flex;
+    aspect-ratio: 1;
+    align-items: center;
+    background: rgb(100, 149, 237);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.social-media a:hover {
+    transform: scale(1.5);
+    background: white;
+  
+}
+.social-media a:hover i {
+    color: #6495ED;
+}
+
 
 /* footer section */
 
