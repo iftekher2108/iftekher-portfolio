@@ -256,10 +256,6 @@ nav {
     background: var(--bg-color);
 }
 
-.skills-items {
-
-    overflow: hidden;
-}
 
 .skills-items .items {
     border-radius: 1rem !important;
@@ -271,9 +267,9 @@ nav {
 .skills-items .items:hover {
     background: var(--bg-color) !important;
     color: white;
-    box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
-    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
-    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
 
 }
 
