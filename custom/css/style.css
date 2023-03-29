@@ -85,7 +85,7 @@ div.hide {
 
 /* window resizing */
 
-#home,#about-me,#skill {
+#skill {
     height: 110vh;
 }
 
@@ -385,6 +385,16 @@ nav {
 
 .project-btn {
     letter-spacing: 5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border:none !important;
+}
+
+.project-btn:hover {
+    background: tomato !important;
 }
 
 /* project image section */
