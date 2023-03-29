@@ -285,8 +285,12 @@ nav {
 }
 
 .button-group button:nth-child(1) {
-background: rgb(4, 26, 87);;
-
+    background: rgb(4, 26, 87);
+    transition: all 0.3s ease-in-out ;
+    -webkit-transition: all 0.3s ease-in-out ;
+    -moz-transition: all 0.3s ease-in-out ;
+    -ms-transition: all 0.3s ease-in-out ;
+    -o-transition: all 0.3s ease-in-out ;
 }
 
 .button-group button:nth-child(1):hover {
@@ -297,7 +301,11 @@ background: rgb(4, 26, 87);;
 .button-group button:nth-child(2){
     background: white;
     color: tomato;
-
+    transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
 }
 .button-group button:nth-child(2):hover {
     color: white;
