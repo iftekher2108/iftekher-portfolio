@@ -1,10 +1,10 @@
 console.log("iftekher mahmud pervez")
 
 // category selection
-let btn_all =document.querySelector('.col-3.btn.all'),
-btn_bootstrap =document.querySelector('.col-3.btn.bootstrap'),
-btn_wordpress =document.querySelector('.col-3.btn.wordpress'),
-btn_others =document.querySelector('.col-3.btn.others');
+let btn_all =document.querySelector('.btn.all'),
+btn_bootstrap =document.querySelector('.btn.bootstrap'),
+btn_wordpress =document.querySelector('.btn.wordpress'),
+btn_others =document.querySelector('.btn.others');
 // category selection 
 
 console.log(btn_others)
