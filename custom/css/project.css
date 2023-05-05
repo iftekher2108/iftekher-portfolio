@@ -41,15 +41,27 @@ body {
 
 .project-photo img {
     aspect-ratio: 1;
-    transition: all 0.3s ease-in-out;
     background-position: center;
-    border-radius: 1rem;
     overflow: hidden;
     z-index: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .project-photo img:hover {
     transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
 }
 
 .project-photo .project-hover {
@@ -57,8 +69,8 @@ body {
 }
 
 .hide {
-    transition: all 0.3s ease-in-out;
     display: none;
+    transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -80,11 +92,15 @@ body {
     left: 35%;
     border: none;
     transform: scale(0);
-    transition: all 0.3s ease-in-out;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 .project-photo button:hover {
     color: white;
