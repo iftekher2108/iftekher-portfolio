@@ -68,7 +68,7 @@ btn_bootstrap.onclick = () => {
 
     
     project_others.forEach(others_project => {
-        others_project.classList.remove('hide');
+        others_project.classList.add('hide');
            
        });
 
