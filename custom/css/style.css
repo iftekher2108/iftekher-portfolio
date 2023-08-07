@@ -380,6 +380,10 @@ nav {
     background: tomato;
 }
 
+#about-me .about-content .content-section img {
+    width: 70%;
+}
+
 
 /* about me section */
 
@@ -713,5 +717,9 @@ canvas {
         top: 50%;
         height: 5%;
         width: 50%;
+    }
+
+    #about-me .about-content .content-section img {
+        width: 100%;
     }
 }
