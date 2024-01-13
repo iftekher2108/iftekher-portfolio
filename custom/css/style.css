@@ -10,7 +10,8 @@
 
 /* variable collection */
 :root {
-    --bg-color: #6495ED;
+    --primary: #6495ED;
+    --primary-hover:#407be9;
 }
 
 /* variable collection */
@@ -23,7 +24,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background:#6495ED;
+    background:var(--primary);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -31,7 +32,7 @@
     -o-border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
-background: #407be9;
+background: var(--primary-hover);
 }
 
 /* scrolling thumb */
@@ -180,7 +181,16 @@ nav {
 
 /* hero section */
 .hero {
+    z-index: -1;
     overflow: hidden;
+}
+
+.hero-image img {
+    border-radius: 15px;
+    border-top-right-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+    border-left: 10px solid var(--primary);
+    border-right: 10px solid var(--primary);
 }
 
 .hero-content {
@@ -189,6 +199,20 @@ nav {
 
 .hero-content h3 {
     position: relative;
+    /* text-align: center; */
+
+}
+
+.hero-content h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right:76%;
+    height: 2px;
+    margin-left:1%;
+    width: 50%;
+    background: #000;
+    transform:translateX(-50%)
 }
 
 .hero-content h3::after {
