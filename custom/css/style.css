@@ -103,12 +103,11 @@ body {
 body::before {
     content: "";
     position: absolute;
-    /* iftekher protfolio website\image\background.jpg */
-    background: url(background.png);
-    height: 100%;
+    background: url(/image/background/background_3.jpg);
+    height:100%;
     width: 100%;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 90vh;
     background-attachment: fixed;
     top: 0;
     z-index: -10;
@@ -202,12 +201,7 @@ nav {
     background: #000;
 }
 
-.hero-image img {
-    border-bottom-left-radius: 50% !important;
-    border-top-right-radius: 50% !important;
-    border-left: 5px solid var(--bg-color) !important;
-    border-right: 5px solid var(--bg-color) !important;
-}
+
 
 
 
