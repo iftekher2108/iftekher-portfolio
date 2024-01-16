@@ -61,7 +61,7 @@
                     data-aos="fade-right">
                     <h3 class="text-capitalize mx-lg-9 mx-md-4 mx-sm-2"> HI, My name is </h3>
                     <h2 class="text-uppercase text-primary fw-bold">Iftekher Mahmud Pervez</h2>
-                    <p>I am a Full Stack Web Dev living in Bangladesh. i enjoy creating everything form small
+                    <p class="fs-6">I am a Full Stack Web Dev living in Bangladesh. i enjoy creating everything form small
                         website to attractive web site.</p>
 
                     <div class="skill-group m-0">
@@ -449,21 +449,18 @@
                         data-aos="fade-up" data-aos-delay="50">
 
                         <div class="col-lg-4 col-md-12 col-sm-12">
-
-                        </div>
-                        <div class="bg-white p-3 px-4 my-2 items">
+                        <div class="p-3 px-4 my-2 items">
                             <div class="icon fs-1">
                                 <i class="fa-solid fa-certificate"></i>
                             </div>
                             <h2 class="">Experience</h2>
                             <small>1+ Years</small>
                         </div>
+                        </div>
+                        
 
                         <div class="col-lg-4 col-md-12 col-sm-12">
-
-                        </div>
-
-                        <div class="bg-white p-3 px-5 my-2 items">
+                        <div class="p-3 px-5 my-2 items">
 
                             <div class="icon fs-1">
                                 <i class="fa-solid fa-bars-progress"></i>
@@ -472,18 +469,21 @@
                             <small>6+ completed</small>
 
                         </div>
-
-                        <div class="col-lg-4 col-md-12 col-sm-12">
-
                         </div>
 
-                        <div class="bg-white p-3 px-5 my-2 items">
+                        
+
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="p-3 px-5 my-2 items">
                             <div class="icon fs-1">
                                 <i class="fa-solid fa-user-group"></i>
                             </div>
                             <h2 class="">Clients</h2>
                             <small>5+ International</small>
                         </div>
+                        </div>
+
+                        
 
                     </div>
                 </div>
@@ -527,32 +527,24 @@
 
 
 
-                <div class="contact-info col-lg-6 col-sm-12 rounded-3" style="background:#6495ED;" data-aos="fade-left">
+                <div class="contact-info bg-dark col-lg-6 col-sm-12 rounded-3" data-aos="fade-left">
 
                     <h6 class="text-center mb-1 mt-5 text-white">GET IN TOUCH</h6>
                     <hr style="border:1px solid white;">
-                    <div class="inf-section p-5">
+                    <div class="info-section p-5">
                         <form action="https://formspree.io/f/mqkoqqjw" method="post" class="py-5">
 
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control rounded-0" name="Name" id="floatingInput"
-                                    placeholder="Name">
-                                <label for="floatingInput">Name</label>
-                            </div>
+                                <input type="text" class="form-control mb-3 rounded-0" name="Name"
+                                    placeholder="Name" autocomplete="off" required>
 
 
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control rounded-0" name="email" id="floatingInput"
-                                    placeholder="E-mail">
-                                <label for="floatingInput">E-mail</label>
-                            </div>
+                                <input type="email" class="form-control mb-3 rounded-0" name="email" 
+                                    placeholder="E mail" autocomplete="off" required>
+       
 
+                                <textarea class="form-control mb-3 rounded-0" placeholder="Send Text Message..."
+                                    name="message" style="height: 100px" required></textarea>
 
-                            <div class="form-floating">
-                                <textarea class="form-control rounded-0" placeholder="Leave a comment here"
-                                    name="message" id="floatingTextarea2" style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Send Text Message...</label>
-                            </div>
                             <div class="d-grid gap-2">
                                 <button type="submit" class="input-button btn btn-primary my-4">Send Message</button>
                             </div>

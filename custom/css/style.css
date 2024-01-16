@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 
@@ -19,6 +19,8 @@
     --dark:#0F0F0F;
     --dark-hover:#232D3F;
     --white:#fff;
+    --roboto:"Roboto", sans-serif;
+    --open-sans:"Open Sans", sans-serif;
 }
 /*=========================== variable collection ========================== */
 
@@ -57,6 +59,16 @@ background: var(--primary-hover);
     100% {
         width: var(--width);
     }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--roboto);
+    font-weight: 600;
+}
+
+p,span,label,button {
+    font-family: var(--open-sans);
+    font-weight: 300;
 }
 
 /* =========================== utilities =============================== */
@@ -540,70 +552,230 @@ nav#section-content li {
     font-size: 2rem;
 }
 
-
-
-
 .skills-content {
     background: transparent;
 }
 
-
 .skills-items .items {
-    background: var(--dark-hover);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
     border-radius: 1rem !important;
     -webkit-border-radius: 1rem !important;
     -moz-border-radius: 1rem !important;
     -ms-border-radius: 1rem !important;
     -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
 
 .skills-items .items:hover {
-    background: var(--bg-color) !important;
-    color: white;
-    box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    background: var(--bg-hover-card) !important;
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
-
 }
 
+.skills-items .items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.skills-items .items::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.skills-items .items:hover::before {
+    left: -50%;
+}
+
+.skills-items .items:hover::after {
+    right: -50%;
+}
+
+/* =========================== skill section ========================= */
 
 
-/* skill section */
 
 
+/* =========================== contact section ======================== */
 
-
-/* contact section */
 .contact-image :is(.gmail, .whatsapp) {
-    background: #f1f1f1;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    -moz-border-radius: 1rem !important;
+    -ms-border-radius: 1rem !important;
+    -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
-
 
 .contact-image :is(.gmail, .whatsapp):hover {
-    background: #6495ED;
-    color: white;
+    background: var(--bg-hover-card) !important;
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
 }
+
+.contact-image :is(.gmail, .whatsapp)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.contact-image :is(.gmail, .whatsapp)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.contact-image :is(.gmail, .whatsapp):hover::before {
+    left: -50%;
+}
+
+.contact-image :is(.gmail, .whatsapp):hover::after {
+    right: -50%;
+}
+
+
+/* contact information form */
+ 
+ .contact-info {
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    -moz-border-radius: 1rem !important;
+    -ms-border-radius: 1rem !important;
+    -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.contact-info:hover {
+    /* background: #000000b4 !important; */
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.contact-info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.contact-info:hover::before {
+    left: -50%;
+}
+
+.contact-info:hover::after {
+    right: -50%;
+}
+
+
+/* contact information form */
+
+
+
 
 
 .title span {
-    background: var(--bg-color);
     color: white;
 }
 
 button.input-button {
-    font-weight: bold;
+    color: var(--white);
     letter-spacing: 3px;
-    background: var(--bg-color);
+    background: transparent;
     border: none;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -622,14 +794,18 @@ button.input-button {
 }
 
 button.input-button:hover {
-    background: white;
-    color: var(--bg-color);
+    background: var(--primary);
+    border-radius: 20px;
+    color: white;
+    
 }
-label {
-    color: white !important;
+
+::placeholder {
+    color: var(--white) !important;
 }
+
 form input,form textarea {
-    background: var(--bg-color)!important;
+    background: transparent !important;
     border: none !important;
     color: white!important;
     border-bottom: 1px solid white!important;
@@ -640,8 +816,6 @@ form input,form textarea {
     -ms-border-radius: none !important;
     -o-border-radius: none !important;
 }
-
-
 
 /* contact section */
 
