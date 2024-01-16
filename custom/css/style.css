@@ -549,8 +549,7 @@ nav#section-content li {
 
 
 .skills-items .items {
-    flex-grow: 1;
-    color: var(--bg-color);
+    background: var(--dark-hover);
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
