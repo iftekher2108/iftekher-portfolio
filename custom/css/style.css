@@ -94,8 +94,8 @@ p,span,label,button {
     white-space: nowrap;
     text-align: center;
     border-right: 2px solid white;
-    animation: type 3s ease-in-out forwards;
-    -webkit-animation: type 3s ease-in-out forwards;
+    animation: type 2.5s ease-in-out forwards;
+    -webkit-animation: type 2.5s ease-in-out forwards;
 }
 
 
