@@ -1,131 +1,89 @@
-console.log("iftekher mahmud pervez")
+console.log("Iftekher Mahmud Pervez")
 
 // category selection
-let btn_all =document.querySelector('.btn.all'),
-btn_bootstrap =document.querySelector('.btn.bootstrap'),
-btn_wordpress =document.querySelector('.btn.wordpress'),
-btn_others =document.querySelector('.btn.others');
+btn_all =$('.btn-all'),
+btn_bootstrap =$('.btn-bootstrap'),
+btn_wordpress =$('.btn-wordpress'),
+btn_others =$('.btn-others');
 // category selection 
 
-console.log(btn_others)
+// console.log(btn_others)
 
 // project category 
-let project_bootstrap =document.querySelectorAll('.project-hover.bootstrap'),
-project_wordpress =document.querySelectorAll('.project-hover.wordpress'),
-project_others =document.querySelectorAll('.project-hover.others');
+project_bootstrap =$('.bootstrap'),
+project_wordpress =$('.wordpress'),
+project_others =$('.others');
 
-console.table(project_wordpress)
-// project category
+// console.table(project_wordpress)
 
-btn_all.onclick = () => {
-    console.log('clicked')
-    btn_all.classList.add('active');
-    btn_wordpress.classList.remove('active');
-    btn_bootstrap.classList.remove('active');
-    btn_others.classList.remove('active');
-
-
-    project_bootstrap.forEach(bootstrap_project => {
-        bootstrap_project.classList.remove('hide');
-           
-       });
-
-    project_wordpress.forEach(wordpress_project => {
-     wordpress_project.classList.remove('hide');
-        
-    });
+// project all category
+btn_all.click(function(){
+    //   console.log('clicked')
+    btn_all.addClass('active');
+    btn_wordpress.removeClass('active');
+    btn_bootstrap.removeClass('active');
+    btn_others.removeClass('active');
 
 
-    project_others.forEach(others_project => {
-        others_project.classList.remove('hide');
-           
-       });
+    // project hide
+        project_bootstrap.slideDown(300);  
 
+        project_wordpress.slideDown(300); 
 
+        project_others.slideDown(300);
+    // project hide
 
     
-}
+});
 
 
 
-btn_bootstrap.onclick = () => {
-    console.log('clicked')
-    btn_all.classList.remove('active');
-    btn_wordpress.classList.remove('active');
-    btn_bootstrap.classList.add('active');
-    btn_others.classList.remove('active');
+btn_bootstrap.click(function(){
+    // console.log('clicked')
+    btn_all.removeClass('active');
+    btn_wordpress.removeClass('active');
+    btn_bootstrap.addClass('active');
+    btn_others.removeClass('active');
 
+    // project hide
+    project_bootstrap.slideDown(300);
 
-    project_bootstrap.forEach(bootstrap_project => {
-        bootstrap_project.classList.remove('hide');
-           
-       });
+    project_wordpress.slideUp(300);
 
-    project_wordpress.forEach(wordpress_project => {
-     wordpress_project.classList.add('hide');
-        
-    });
+    project_others.slideUp(300);
+    // project hide
 
-    
-    project_others.forEach(others_project => {
-        others_project.classList.add('hide');
-           
-       });
+})
 
+btn_wordpress.click(function(){
+//   console.log('clicked')
+    btn_all.removeClass('active');
+    btn_wordpress.addClass('active');
+    btn_bootstrap.removeClass('active');
+    btn_others.removeClass('active');
 
-}
+        project_bootstrap.slideUp(300);
 
-
-btn_wordpress.onclick = () => {
-    console.log('clicked')
-    btn_all.classList.remove('active');
-    btn_wordpress.classList.add('active');
-    btn_bootstrap.classList.remove('active');
-    btn_others.classList.remove('active');
-
-    project_bootstrap.forEach(bootstrap_project => {
-        bootstrap_project.classList.add('hide');
-           
-       });
-
-       project_wordpress.forEach(wordpress_project => {
-        wordpress_project.classList.remove('hide');
-           
-       });
+        project_wordpress.slideDown(300);
      
-    project_others.forEach(others_project => {
-        others_project.classList.add('hide');
-           
-       });
+        project_others.slideUp(300);
+})
 
 
-}
+btn_others.click(function(){
+//  console.log('clicked')
+    btn_all.removeClass('active');
+    btn_wordpress.removeClass('active');
+    btn_bootstrap.removeClass('active');
+    btn_others.addClass('active');
 
 
-btn_others.onclick = () => {
-    console.log('clicked')
-    btn_all.classList.remove('active');
-    btn_wordpress.classList.remove('active');
-    btn_bootstrap.classList.remove('active');
-    btn_others.classList.add('active');
+        project_bootstrap.slideUp(300);
 
-
-    project_bootstrap.forEach(bootstrap_project => {
-        bootstrap_project.classList.add('hide');
-           
-       });
-       project_wordpress.forEach(wordpress_project => {
-        wordpress_project.classList.add('hide');
-           
-       });
-
-       
-    project_others.forEach(others_project => {
-        others_project.classList.remove('hide');
-           
-       });
-
-
-
+        project_wordpress.slideUp(300);
     
-}
+        project_others.slideDown(300);
+           
+
+})
+   

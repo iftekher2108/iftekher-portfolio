@@ -1,29 +1,16 @@
-console.log("iftekher mahmud pervez")
+console.log("Iftekher Mahmud Pervez")
 
-
-
-
-
-
-
-
-
-let intro =document.querySelector('.intro');
-console.log(intro)
-
+// intro section
+let intro =$('.intro');
 setTimeout(() => {
-    intro.classList.remove('intro-window');
-    intro.classList.add('hide');
+    intro.removeClass('intro-window');
+    intro.addClass('hide');
 }, 10000);
-
-
-
-
-
+// intro section
 
 // footer dynamic date set
-let target =document.querySelector("body > footer > div > p > span");
+let target =$("body > footer > div > p > span");
 let date = new Date();
 let year = date.getFullYear();
-target.innerHTML=year;
+target.text(year);
 // footer dynamic date set

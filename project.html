@@ -7,39 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iftekher project</title>
 
-    <link rel="stylesheet" href="custom/css/project.css">
+    <!-- bootstrap 5.3.2 custom -->
+    <link rel="stylesheet" href="./custom/bootstrap/css/custom-bootstrap.min.css">
+    <!-- bootstrap 5.3.2 custom -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome 6.5.1 -->
+    <link rel="stylesheet" href="./custom/plugins/fontawesome/css/all.min.css">
+    <!-- font awesome 6.5.1 -->
 
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="./custom/plugins/aos/dist/aos.css" />
+    <link rel="stylesheet" href="./custom/css/project.css">
 
 </head>
 
 <body>
+        <!-- background web -->
+        <div class="background fixed-top" style="z-index:-10;opacity: 0.5;">
+            <img src="./image/background/background_3.jpg" class="img-fluid" alt="background">
+        </div>
+        <!-- background web -->
+
+
+        <!-- feature img -->
+             <div class="feture-img">
+                <img src="./image/background/background_1.jpg" class="w-100 mb-3" height="400" alt="feature-img">
+
+                </div>
+        <!-- feature image -->
+
     <div class="project">
         <div class="project-title">
-            <h3 class="btn text-white m-3" style="background: var(--bg-color);"><a href="index.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i></a></h3>
-            <h2 class="text-center m-2 py-2 border-bottom border-1" style="color:var(--bg-color); border-color: rgba(0,0,0,0.5)">Recently Working Project</h2>
+
+            <h2 class="text-center m-2 py-2">
+                <span class="border-start px-5 border-primary fw-bold border-end border-3">Recently Working Project</span>
+            </h2>
+
+            <h3 class="btn text-white btn-primary m-3"><a href="index.html" class="nav-link"><i
+                        class="fa-solid me-2 fa-arrow-left"></i> Back</a></h3>
+
+            
+
             <div class="d-flex gap-1 justify-content-center align-items-center m-0 p-0">
-                <div class=" btn all active">
+                <div class=" btn-all active btn">
                     ALL
                 </div>
 
-                <div class=" bootstrap btn">
+                <div class=" btn-bootstrap btn">
                     BOOTSTRAP
                 </div>
 
-                <div class=" wordpress btn">
+                <div class=" btn-wordpress btn">
                     WORDPRESS
                 </div>
 
-                <div class=" others btn">
+                <div class=" btn-others btn">
                     OTHERS
                 </div>
 
@@ -48,75 +70,122 @@
 
         </div>
         <div class="project-content">
-            <div class="project-content" data-aos="zoom-in">
-                <div class="project-photo row p-3 m-0">
-                    <div class="project-hover bootstrap col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/happiness-project.jpg" class="img-fluid object-fit-cover p-1"
-                            alt="gallery-image">
-                        <h2>Happiness-website design-project</h2>
-                        <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="https://iftekher2108.github.io/happiness-template/"
-                                class="nav-link text-white">Live View</a></button>
+            <div class="project-content p-5" data-aos="zoom-in">
+                <div class="project-photo row g-3">
+
+                    <div class="bootstrap col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/happiness-project.jpg" class="img-fluid object-fit-cover"
+                                alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Happiness-website design-project</h2>
+                                <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/happiness-template/"
+                                        class="nav-link text-white">Live View</a></button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="project-hover bootstrap col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/restuarent-Project.jpg" class="img-fluid object-fit-cover p-1"
-                            alt="gallery-image">
-                        <h2>Restuarent website design-project</h2>
-                        <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="https://iftekher2108.github.io/restaurent-templete/"
-                                class="nav-link text-white">Live View</a></button>
+                    <div class="bootstrap col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/restuarent-Project.jpg" class="img-fluid object-fit-cover"
+                                alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Restuarent website design-project</h2>
+                                <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/restaurent-templete/"
+                                        class="nav-link text-white">Live View</a></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bootstrap col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/pet-consultency-Project-Presentation.jpg" class="img-fluid object-fit-cover"
+                                alt="gallery-image">
+
+                            <div class="p-3">
+                                <h2>Pet Consultency website design-project</h2>
+                                <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/pet-consultency-templete/"
+                                        class="nav-link text-white">Live View</a></button>
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="project-hover bootstrap col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/pet-consultency-Project-Presentation.jpg" class="img-fluid object-fit-cover p-1"
-                            alt="gallery-image">
-                        <h2>Pet Consultency website design-project</h2>
-                        <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="https://iftekher2108.github.io/pet-consultency-templete/"
-                                class="nav-link text-white">Live View</a></button>
-                    </div>
+                    <div class="bootstrap col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/home-solution-Project-Presentation.jpg" class="img-fluid object-fit-cover"
+                                alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Home solution website design-project</h2>
+                                <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/home-solution-template/"
+                                        class="nav-link text-white">Live View</a></button>
 
-                    <div class="project-hover bootstrap col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/home-solution-Project-Presentation.jpg" class="img-fluid object-fit-cover p-1"
-                            alt="gallery-image">
-                        <h2>Home solution website design-project</h2>
-                        <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP</p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="https://iftekher2108.github.io/home-solution-template/"
-                                class="nav-link text-white">Live View</a></button>
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="project-hover wordpress col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/learning-blog-Project-Presentation.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <h2>Learning Blog website-project</h2>
-                        <p>WORDPRESS | BLOG | DYNAMIC WEBSITE</p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="http://iftekhermahmud.epizy.com/" class="nav-link text-white">Live View</a></button>
+                    <div class="wordpress col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/learning-blog-Project-Presentation.jpg" class="img-fluid object-fit-cover"
+                                alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Learning Blog website-project</h2>
+                                <p>WORDPRESS | BLOG | DYNAMIC WEBSITE</p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="http://iftekhermahmud.epizy.com/" class="nav-link text-white">Live
+                                        View</a></button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="project-hover wordpress col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/mug-tshirt-ecomarce-Project-Presentation.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <h2>Coder Foundation Clone website</h2>
-                        <p>WORDPRESS | E-COMARCE | DYNAMIC WEBSITE </p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="http://iftekhermahmud.ezyro.com/" class="nav-link text-white">Live View</a></button>
+                    <div class="wordpress col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/mug-tshirt-ecomarce-Project-Presentation.jpg"
+                                class="img-fluid object-fit-cover" alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Coder Foundation Clone website</h2>
+                                <p>WORDPRESS | E-COMARCE | DYNAMIC WEBSITE </p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="http://iftekhermahmud.ezyro.com/" class="nav-link text-white">Live
+                                        View</a></button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="project-hover others col-lg-4 col-md-6 col-sm-12 p-0 m-0">
-                        <img src="image/calculator-Project-Presentation.jpg" class="img-fluid object-fit-cover p-1" alt="gallery-image">
-                        <h2>Calculator Project</h2>
-                        <p>HTML5 | CSS3 | JAVASCRIPT </p>
-                        <button class="btn btn-primary fw-bold py-1 px-3" style="background:var(--bg-color);"><a
-                                href="https://iftekher2108.github.io/calculator-project/" class="nav-link text-white">Live View</a></button>
+                    <div class="others col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="image/calculator-Project-Presentation.jpg" class="img-fluid object-fit-cover "
+                                alt="gallery-image">
+                            <div class="p-3">
+                                <h2>Calculator Project js</h2>
+                                <p>HTML5 | CSS3 | JAVASCRIPT </p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/calculator-project/"
+                                        class="nav-link text-white">Live View</a></button>
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -140,20 +209,20 @@
 
 
     <!-- bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+    <script src="./custom/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap javascript -->
 
     <!-- jquery plugins -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-
+    <!-- jquery plugins -->
 
     <!-- custom javascript -->
-    <script src="custom/js/project.js"></script>
+    <script src="./custom/js/project.js"></script>
     <!-- custom javascript  -->
 
     <!-- aos plugin -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./custom/plugins/aos/dist/aos.js"></script>
+
     <!-- aos init -->
     <script>
         AOS.init({
@@ -167,9 +236,8 @@
             mirror: false,
             once: true
         });
-
     </script>
-    <!-- aos plugin implimentation -->
+    <!-- aos plugin -->
 
 </body>
 
