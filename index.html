@@ -36,16 +36,20 @@
     <header>
         <nav id="section-content"
             class="px-3 shadow bg-gradient bg-primary py-2 d-flex align-items-center gap-3 rounded-pill">
-            <li class="list-group-item "><a href="#home" title="Home" class="nav-link rounded-3 active"><i
-                        class="fa-solid fa-user"></i> <span class="sr-only">(current)</span></a></li>
-            <li class="list-group-item "><a href="#about-me" title="About Me" class="nav-link  rounded-3">
-                    <i class="fa-brands fa-servicestack"></i></a></li>
-            <li class="list-group-item "><a href="#project" title="project" class="nav-link rounded-3"> <i
-                        class="fa-regular fa-image"></i></a></li>
-            <li class="list-group-item "><a href="#skill" title="Learned Skill" class="nav-link rounded-3"> <i
-                        class="fa-solid fa-user-tie"></i></a></li>
-            <li class="list-group-item "><a href="#contact" title="Contact" class="nav-link rounded-3"> <i
-                        class="fa-solid fa-network-wired"></i></a></li>
+            <a href="#home" title="Home" class="nav-link p-0 m-0 rounded-3 active"><li class="list-group-item "><i
+                        class="fa-solid fa-user"></i> <span class="sr-only">(current)</span></li></a>
+
+            <a href="#about-me" title="About Me" class="nav-link p-0 m-0  rounded-3"><li class="list-group-item ">
+                    <i class="fa-brands fa-servicestack"></i></li></a>
+
+            <a href="#project" title="project" class="nav-link p-0 m-0 rounded-3"><li class="list-group-item "> <i
+                        class="fa-regular fa-image"></i></li></a>
+
+            <a href="#skill" title="Learned Skill" class="nav-link p-0 m-0 rounded-3"><li class="list-group-item "> <i
+                        class="fa-solid fa-user-tie"></i></li></a>
+
+            <a href="#contact" title="Contact" class="nav-link p-0 m-0 rounded-3"><li class="list-group-item "> <i
+                        class="fa-solid fa-network-wired"></i></li></a>
         </nav>
 
     </header>
@@ -130,25 +134,7 @@
 
 
                 </div>
-                <!-- 
-                <div class="information text-white">
-                    <div class="row py-1 px-3 m-0">
-                        <div class="col lg-4 col sm-12">
-                            hello
-                        </div>
-                        
-                        
-                        <div class="col lg-4 col sm-12">
-                            hello
-                        </div>
-
-
-                        <div class="col lg-4 col sm-12">
-                            hello
-                        </div>
-                    </div>
-                </div>
-            -->
+   
 
             </div>
 
@@ -298,7 +284,7 @@
         <!-- ========================================this is project section end here================================================== -->
 
         <!-- ===============================================this is skill section start here============================================== -->
-        <div id="skill" class="m-0 p-0">
+        <div id="skill" class="m-0 overflow-hidden p-0">
 
             <div class="skill-content m-0 mt-2 text-center overflow-hidden" data-aos="zoom-in">
 
@@ -442,7 +428,7 @@
 
 
 
-                <h2 class="skill-title fw-bold  mt-4 text-center"><span class="px-4 py-1 border-4 border-start border-end border-primary">Work Experiance</span></h2>
+                <h2 class="fw-bold  mt-4 text-center"><span class="px-4 py-1 border-4 border-start border-end border-primary">Work Experiance</span></h2>
 
                 <div class="skills-content px-5 py-3">
                     <div class="skills-items row g-3 text-center"
@@ -499,13 +485,21 @@
 
 
         <!-- =============================================this is contact section start here==================================================== -->
-        <div id="contact" class="bg-white pb-2">
-            <div class="title vstack text-center " data-aos="zoom-in">
-                <span class="fs-2 fw-bolder p-2">Connect With Me</span>
+        <div id="contact" class="bg-white pt-5 pb-2">
+            
+            <div class="px-5">
+                <h1 class="text-center p-3
+                     bg-primary text-white 
+                     text-uppercase fw-bold 
+                     rounded-2 border-8 
+                     border-start border-end
+                      border-warning ">Connect With Me</h1>
             </div>
+
+
             <div class="contact-content row p-lg-5 p-sm-3 m-0 overflow-hidden">
                 <div class="contact-image col-lg-6 col-sm-12 p-lg-5 p-sm-0 my-2" data-aos="fade-right">
-                    <h3 class="vstack mx-auto" style="color:var(--bg-color)">Iftekher Mahmud Pervez</h3>
+                    <h3 class="vstack mx-auto py-2 border-primary border-end border-3 ">Iftekher Mahmud Pervez</h3>
                     <div class="gmail-whatsapp hstack gap-2 row p-lg-2 p-sm-1 m-0">
 
                         <div class="gmail col-12 px-lg-5 px-sm-2 py-2 text-center rounded-4">
@@ -527,11 +521,10 @@
 
 
 
-                <div class="contact-info bg-dark col-lg-6 col-sm-12 rounded-3" data-aos="fade-left">
+                <div class="contact-info bg-dark shadow col-lg-6 col-sm-12 p-sm-2 rounded-3" data-aos="fade-left">
 
-                    <h6 class="text-center mb-1 mt-5 text-white">GET IN TOUCH</h6>
-                    <hr style="border:1px solid white;">
-                    <div class="info-section p-5">
+                    <div class="px-5"><h5 class="text-center py-2 px-5  border-start border-end border-4 border-primary mb-1 mt-5 text-white">GET IN TOUCH</h5></div>
+                    <div class="info-section py-3 px-5">
                         <form action="https://formspree.io/f/mqkoqqjw" method="post" class="py-5">
 
                                 <input type="text" class="form-control mb-3 rounded-0" name="Name"
@@ -567,17 +560,16 @@
     <!-- ========================footer section start here=============================================== -->
     <footer class="bg-dark text-white">
         <div class="footer-content p-5">
-            <div class="footer-menu fw-bold d-lg-flex justify-content-center gap-4 my-lg-3 my-sm-1">
+            <div class="footer-menu fw-bold d-flex flex-lg-row flex-md-row flex-sm-column justify-content-center gap-3 my-lg-3 my-sm-1">
                 <a href="#home" class="nav-link my-sm-1 my-lg-0"> Home</a>
                 <a href="#about-me" class="nav-link my-sm-1 my-lg-0"> About Me</a>
                 <a href="#project" class="nav-link my-sm-1 my-lg-0"> project</a>
                 <a href="#skill" class="nav-link my-sm-1 my-lg-0"> Learned Skill</a>
                 <a href="#contact" class="nav-link my-sm-1 my-lg-0"> Contact</a>
 
-
             </div>
 
-            <div class="social-media d-flex flex-sm-wrap align-items-center justify-content-center gap-5 py-2">
+            <div class="social-media d-flex flex-sm-wrap align-items-center justify-content-center gap-5 mb-2 py-2">
                 <a href="https://www.facebook.com/mdiftekher.mahmud/"
                     class="nav-link rounded-circle p-1 px-2 text-white">
                     <i class="fa-brands fs-5 p-0 m-0 fa-square-facebook"></i></a>
@@ -586,6 +578,7 @@
                     <i class="fa-brands fs-5 fa-whatsapp"></i></a>
                 <a href="https://github.com/iftekher2108" class="nav-link rounded-circle p-1 px-2 text-white"> <i
                         class="fa-brands fs-5 fa-github"></i></a>
+
                 <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-youtube"></i></a> -->
                 <!-- <a href="#" class="nav-link rounded-circle px-2 text-white"> <i class="fa-brands fa-linkedin"></i></a> -->
 
@@ -594,8 +587,8 @@
 
 
 
-            <h2 class="text-center fw-bold">Iftekher Mahmud Pervez</h2>
-            <p class="text-center">&copy; Iftekher Mahmud Pervez 2020 - <span>2022</span></p>
+            <div class="text-center"><span class="text-center py-1 px-4 fs-2 fw-bold">Iftekher Mahmud Pervez</span></div>
+            <p class="mt-3 text-center">&copy; Iftekher Mahmud Pervez 2020 - <span>2022</span></p>
         </div>
         <div class="p-4"></div>
 
