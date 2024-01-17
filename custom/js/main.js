@@ -5,6 +5,10 @@ let intro =$('.intro');
 setTimeout(() => {
     intro.addClass('animate__hinge');
     // intro.addClass('hide')
+}, 3500);
+
+setTimeout(() => {
+    intro.addClass('hide')
 }, 5000);
 // intro section
 
