@@ -1,20 +1,21 @@
 console.log("Iftekher Mahmud Pervez")
 
 // intro section
-let intro =$('.intro');
-setTimeout(() => {
+var intro = $(".intro");
+
+setTimeout(function(){
     intro.addClass('animate__hinge');
     // intro.addClass('hide')
 }, 3500);
 
-setTimeout(() => {
+setTimeout(function(){
     intro.addClass('hide')
-}, 5000);
+}, 6500);
 // intro section
 
 // footer dynamic date set
-let target =$("body > footer > div > p > span");
-let date = new Date();
-let year = date.getFullYear();
+var target =$("body > footer > div > p > span");
+var date = new Date();
+var year = date.getFullYear();
 target.text(year);
 // footer dynamic date set
