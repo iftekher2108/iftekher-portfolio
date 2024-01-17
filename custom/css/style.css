@@ -1,29 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 /* universal paddding margin reset */
 * {
     padding: 0;
     margin: 0;
 }
-
 /* universal paddding margin reset */
 
-
-
-/* variable collection */
+/* ========================= variable collection ========================== */
 :root {
-    --bg-color: #6495ED;
+    --primary: #6495ED;
+    --primary-hover:#407be9;
+    --card-bg:#282A3A;
+    --bg-hover-card:transparent;
+    --danger: #E74033;
+    --dark:#0F0F0F;
+    --dark-hover:#232D3F;
+    --white:#fff;
+    --roboto:"Roboto", sans-serif;
+    --open-sans:"Open Sans", sans-serif;
 }
+/*=========================== variable collection ========================== */
 
-/* variable collection */
 
-/* scrolling thumb */
+/* =========================== scrolling section =========================== */
 ::-webkit-scrollbar {
     height: 5px;
     width: 10px;
 
 }
-
 ::-webkit-scrollbar-thumb {
-    background:#6495ED;
+    background:var(--primary);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -31,12 +40,45 @@
     -o-border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover {
-background: #407be9;
+background: var(--primary-hover);
+}
+/* ============================= scrolling section ========================= */
+
+
+
+/* ============================= utilities =============================== */
+.hide {
+    display: none !important;
 }
 
-/* scrolling thumb */
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
 
-/* intro window css */
+    100% {
+        width: var(--width);
+    }
+}
+
+h1,h2,h3,h4,h5,h6,a {
+    font-family: var(--roboto);
+    font-weight: 600;
+}
+
+p,span,label,button {
+    font-family: var(--open-sans);
+    font-weight: 300;
+}
+
+/* =========================== utilities =============================== */
+
+.hide.d-flex.align-items-center.justify-content-center.bg-dark {
+    display: none !important;
+}
+
+/* ========================== intro section ============================= */
+
 .intro-window {
     top: 0;
     left: 0;
@@ -48,31 +90,15 @@ background: #407be9;
     animation: close 2.5s linear 5s forwards;
     -webkit-animation: close 2.5s linear 5s forwards;
 }
-div.hide {
-    display: none !important;
-}
-
-.hide.d-flex.align-items-center.justify-content-center.bg-dark {
-    display: none !important;
-}
 
 .intro-window h1 {
+    --width:22ch;
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
     border-right: 2px solid white;
-    animation: intro 4s ease-in-out forwards;
-    -webkit-animation: intro 4s ease-in-out forwards;
-}
-
-@keyframes intro {
-    0% {
-        width: 0ch;
-    }
-
-    100% {
-        width: 24ch;
-    }
+    animation: type 4s ease-in-out forwards;
+    -webkit-animation: type 4s ease-in-out forwards;
 }
 
 @keyframes close {
@@ -85,71 +111,69 @@ div.hide {
     }
 }
 
-/* intro windows css */
-
-
-/* window resizing */
+/* ========================= intro section ========================== */
 
 
 
-
-/* window resizing */
-
-/* body */
+/* ========================= body section ============================== */
 body {
     position: relative;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    overflow-x: hidden !important;
+
 }
 
 body::before {
     content: "";
     position: absolute;
-    /* iftekher protfolio website\image\background.jpg */
-    background: url(background.png);
-    height: 100%;
+    background: url(/image/background/background_3.jpg);
+    height:100%;
     width: 100%;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 90vh;
     background-attachment: fixed;
     top: 0;
     z-index: -10;
     opacity: 0.3;
 }
-
-/* body */
-
+/* =========================== body section ================================== */
 
 
 
-
-/* nav section */
-nav {
-    background: rgba(100, 149, 237,0.7) ;
+/* ============================ nav section ================================== */
+nav#section-content {
     color: white;
     width: fit-content;
     position: fixed;
     bottom: 0%;
     left: 50%;
-    z-index: 50;
+    z-index: 50; 
+    padding: 0.8rem;
     backdrop-filter: blur(10px);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+
 }
 
-
-
-
-
+nav#section-content li {
+    padding: 0.6rem;
+    cursor: pointer;
+ 
+} 
+ 
 .active {
-    color: var(--bg-color) !important;
+    color: var(--dark-hover) !important;
+    border: 2px solid var(--dark-hover) !important;
     background: white;
-    border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
+    border-radius: 50px !important;
+    padding: 0.6rem;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    -ms-border-radius: 50px !important;
+    -o-border-radius: 50px !important;
     animation: scale 0.7s ease-in-out infinite alternate;
     -webkit-animation: scale 0.7s ease-in-out infinite alternate;
 }
@@ -172,16 +196,23 @@ nav {
 }
 }
 
-/* nav section */
-
+/* ==========================nav section ============================= */
 
 /* #home,#service,#gallery,#skill,#contact {
     height: 100vh;
 } */
 
-/* hero section */
+/* ============================= hero section ======================== */
 .hero {
     overflow: hidden;
+}
+
+.hero-image img {
+    border-radius: 15px;
+    border-top-right-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+    border-left: 10px solid var(--primary);
+    border-right: 10px solid var(--primary);
 }
 
 .hero-content {
@@ -190,6 +221,20 @@ nav {
 
 .hero-content h3 {
     position: relative;
+    /* text-align: center; */
+
+}
+
+.hero-content h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right:76%;
+    height: 2px;
+    margin-left:1%;
+    width: 50%;
+    background: #000;
+    transform:translateX(-50%)
 }
 
 .hero-content h3::after {
@@ -202,19 +247,11 @@ nav {
     background: #000;
 }
 
-.hero-image img {
-    border-bottom-left-radius: 50% !important;
-    border-top-right-radius: 50% !important;
-    border-left: 5px solid var(--bg-color) !important;
-    border-right: 5px solid var(--bg-color) !important;
-}
 
-
-
+/* skill section */
 .skill-group {
 
     height: 2.5rem;
-    color: tomato;
     text-transform: uppercase;
     overflow: hidden;
     /* border: 2px solid red; */
@@ -276,71 +313,35 @@ nav {
         -o-transform: translateY(-0%);
 }
 }
+/* skill section */
 
-/* hero section */
-
-
-
-/* about me section */
-.content-section h2,
-.gallery-title h1 {
-    border-bottom: 2px solid;
-}
+/* ========================= hero section =========================== */
 
 
-.about-content h3,
-.contact-image h3 {
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
-    border-right: 2px solid white;
-    animation: type 4s ease-in-out infinite alternate;
-    -webkit-animation: type 4s ease-in-out infinite alternate;
-}
-
-@keyframes type {
-    0% {
-        width: 0ch;
-    }
-
-    100% {
-        width: 22ch;
-    }
-}
-
-.skills-content {
-    background: transparent;
-}
-
-
-.skills-items .items {
-    flex-grow: 1;
-    color: var(--bg-color);
+/* ======================== about section ============================ */
+#about-me .about-content .content-section img {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    border-radius: 1rem !important;
-    -webkit-border-radius: 1rem !important;
-    -moz-border-radius: 1rem !important;
-    -ms-border-radius: 1rem !important;
-    -o-border-radius: 1rem !important;
 }
 
-.skills-items .items:hover {
-    background: var(--bg-color) !important;
-    color: white;
-    box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
-
+#about-me img:hover {
+    padding: 0rem !important;
 }
 
-/* .skills-items .icon{
-    font-size: 30px;
-} */
 
+.about-content h3,
+.contact-image h3 {
+    --width: 20ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 4s ease-in-out infinite alternate;
+    -webkit-animation: type 4s ease-in-out infinite alternate;
+}
+
+/* btn */
 .button-group button{
     letter-spacing: 2px;
     color: white;
@@ -353,7 +354,6 @@ nav {
 }
 
 .button-group button:nth-child(1) {
-    background: rgb(4, 26, 87);
     transition: all 0.3s ease-in-out ;
     -webkit-transition: all 0.3s ease-in-out ;
     -moz-transition: all 0.3s ease-in-out ;
@@ -362,13 +362,11 @@ nav {
 }
 
 .button-group button:nth-child(1):hover {
-    color: rgb(4, 26, 87);
-    background: #fff;
+    color: white;
+    background: #1B1B2F;
 }
 
 .button-group button:nth-child(2),.project-btn{
-    background: white;
-    color: tomato;
     transition:all 0.3s ease-in-out;
     -webkit-transition:all 0.3s ease-in-out;
     -moz-transition:all 0.3s ease-in-out;
@@ -377,40 +375,103 @@ nav {
 }
 .button-group button:nth-child(2):hover,.project-btn:hover {
     color: white;
-    background: tomato;
+    background: #2D4263;
 }
+
+/* .skills-items .icon{
+    font-size: 30px;
+} */
+
 
 #about-me .about-content .content-section img {
-    width: 70%;
+    width: 75%;
 }
 
 
-/* about me section */
+/* ============================ about me section ============================= */
 
 
 
 
 
 
-/* project image section */
-.project-photo img {
+/* ========================= project gellery section ========================== */
+
+.project-photo .project-hover {
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.project-photo .project-hover:hover {
+    background: var(--bg-hover-card) !important;
+}
+
+.project-photo .project-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.project-photo .project-hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.project-photo .project-hover:hover::before {
+    left: -50%;
+}
+
+.project-photo .project-hover:hover::after {
+    right: -50%;
+}
+
+
+.project-photo .project-hover :where(h2,p) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.project-photo .project-hover img {
     aspect-ratio: 1;
     background-position: center;
     overflow: hidden;
     z-index: 0;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-
-.project-photo img:hover {
+    -o-transition: all 0.3s ease-in-out; 
     transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -moz-transform: scale(0.95);
@@ -418,17 +479,17 @@ nav {
     -o-transform: scale(0.95);
 }
 
-.project-photo button {
-    border: none;
+
+.project-photo .project-hover button {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
-.project-photo button:hover {
+.project-photo .project-hover button:hover {
     color: white;
-    background: tomato!important;
+    background: var(--dark-hover)!important;
 }
 
 .project-photo .project-hover {
@@ -436,6 +497,24 @@ nav {
 }
 
 
+.project-photo .project-hover button {
+    position: absolute;
+    padding: 1rem 2rem !important;
+    top: 50%;
+    left: 50%;
+    border: none;
+    transform: translate(-50%,-50%) scale(0);
+    -webkit-transform: translate(-50%,-50%) scale(0);
+    -moz-transform: translate(-50%,-50%) scale(0);
+    -ms-transform: translate(-50%,-50%) scale(0);
+    -o-transform: translate(-50%,-50%) scale(0);
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
 
 .project-photo .project-hover:hover button {
     position: absolute;
@@ -448,25 +527,10 @@ nav {
     -o-transform: translate(-50%,-50%) scale(1);
 }
 
-.project-photo button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: none;
-    transform: translate(-50%,-50%) scale(0);
-    -webkit-transform: translate(-50%,-50%) scale(0);
-    -moz-transform: translate(-50%,-50%) scale(0);
-    -ms-transform: translate(-50%,-50%) scale(0);
-    -o-transform: translate(-50%,-50%) scale(0);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
 
 
-.project-btn {
+.project-btn-link {
+    background: var(--primary);
     letter-spacing: 5px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -476,55 +540,253 @@ nav {
     border:none !important;
 }
 
-.project-btn:hover {
-    background: tomato !important;
+.project-btn-link:hover {
+    background: var(--dark-hover) !important;
 }
 
-/* project image section */
+/* ======================== project gellery section ========================= */
 
 
 
 
-/* skill section */
-.skill-title {
-    position: relative;
-    color: #6495ED;
-
-}
-
-.skill-title::before {
-    content: "";
-    position: absolute;
-    background: var(--bg-color);
-    left: -25%;
-    top: 50%;
-    height: 5%;
-    width: 50%;
-}
-
-.skill-title::after {
-    content: "";
-    position: absolute;
-    background: var(--bg-color);
-    right: -25%;
-    top: 50%;
-    height: 5%;
-    width: 50%;
-}
+/* =========================== skills section ================================ */
 
 .skill-content i,
 .contact-image i {
     font-size: 2rem;
 }
 
-/* skill section */
+.skills-content {
+    background: transparent;
+}
+
+.skills-items .items {
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    -moz-border-radius: 1rem !important;
+    -ms-border-radius: 1rem !important;
+    -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.skills-items .items:hover {
+    background: var(--bg-hover-card) !important;
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-items .items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.skills-items .items::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.skills-items .items:hover::before {
+    left: -50%;
+}
+
+.skills-items .items:hover::after {
+    right: -50%;
+}
+
+/* =========================== skill section ========================= */
 
 
 
 
-/* contact section */
+/* =========================== contact section ======================== */
+
 .contact-image :is(.gmail, .whatsapp) {
-    background: #f1f1f1;
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    -moz-border-radius: 1rem !important;
+    -ms-border-radius: 1rem !important;
+    -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.contact-image :is(.gmail, .whatsapp):hover {
+    background: var(--bg-hover-card) !important;
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-image :is(.gmail, .whatsapp)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.contact-image :is(.gmail, .whatsapp)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.contact-image :is(.gmail, .whatsapp):hover::before {
+    left: -50%;
+}
+
+.contact-image :is(.gmail, .whatsapp):hover::after {
+    right: -50%;
+}
+
+
+/* =========================== contact information form ============================= */
+ 
+ .contact-info {
+    border: 2px solid var(--primary);
+    background: var(--card-bg);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    -moz-border-radius: 1rem !important;
+    -ms-border-radius: 1rem !important;
+    -o-border-radius: 1rem !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.contact-info:hover {
+    /* background: #000000b4 !important; */
+    box-shadow: 0px 7px 40px 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark) !important;
+    transition: all 0.7s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    -ms-transition: all 0.7s linear;
+    -o-transition: all 0.7s linear;
+}
+
+.contact-info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--dark-hover) !important;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+.contact-info:hover::before {
+    left: -50%;
+}
+
+.contact-info:hover::after {
+    right: -50%;
+}
+
+
+/* ====================== contact information form ============================= */
+.contact-info h5 {
+    position: relative;
+    z-index: 2;
+} 
+
+.contact-info h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--primary);
+    transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    -webkit-transform:scaleX(0);
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -532,22 +794,24 @@ nav {
     -o-transition: all 0.5s ease-in-out;
 }
 
-
-.contact-image :is(.gmail, .whatsapp):hover {
-    background: #6495ED;
-    color: white;
+.contact-info:hover h5::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
 }
 
 
+
 .title span {
-    background: var(--bg-color);
     color: white;
 }
 
 button.input-button {
-    font-weight: bold;
+    color: var(--white);
     letter-spacing: 3px;
-    background: var(--bg-color);
+    background: transparent;
     border: none;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -566,14 +830,19 @@ button.input-button {
 }
 
 button.input-button:hover {
-    background: white;
-    color: var(--bg-color);
+    background: var(--primary);
+    border-radius: 20px;
+    color: white;
+    
 }
-label {
-    color: white !important;
+
+form ::placeholder {
+    color: var(--white) !important;
+    opacity: 0.5 !important;
 }
+
 form input,form textarea {
-    background: var(--bg-color)!important;
+    background: transparent !important;
     border: none !important;
     color: white!important;
     border-bottom: 1px solid white!important;
@@ -585,26 +854,69 @@ form input,form textarea {
     -o-border-radius: none !important;
 }
 
-
-
-/* contact section */
+/* ========================== contact section ============================ */
 
 
 
-/* footer section */
-.footer-content h2 {
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+/* =========================== footer section =============================== */
+
+.footer-content div span {
+    position: relative;
+    z-index: 2;
+
 }
 
-.footer-content h2:hover {
-    color: var(--bg-color);
+.footer-content div span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--primary);
+    animation:footer 3s ease-in-out infinite;
+    -webkit-animation:footer 3s ease-in-out infinite;
+}
+
+@keyframes footer {
+    0%,100% {
+        transform-origin: center center;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+}
+    25%{
+        transform-origin: center center;
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -o-transform: scaleY(1);
+        background: var(--danger);
+}
+    50%{
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -o-transform: scaleY(0);
+}
+    75% {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+}
+
 }
 
 .footer-menu a {
+    font-weight: bold;
+    font-size: 1.2vw;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -613,40 +925,46 @@ form input,form textarea {
 }
 
 .footer-menu a:hover {
-    color: var(--bg-color);
+    transform: translateY(-5px);
+    color: var(--primary);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
 }
 
 .social-media a {
     display: flex;
     aspect-ratio: 1;
     align-items: center;
+    border: 2px solid var(--primary);
     background: rgb(100, 149, 237);
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 .social-media a:hover {
     background: white;
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
 }
 .social-media a:hover i {
     color: #6495ED;
 }
 
 
-/* footer section */
+/* =========================== footer section ============================ */
 
 
 
@@ -657,13 +975,9 @@ form input,form textarea {
 
 
 
-/* particales show css */
+/* ============================ particales show css ============================= */
 
 
-body {
-    font: normal 75% Arial, Helvetica, sans-serif;
-    overflow-x: hidden !important;
-}
 
 canvas {
     aspect-ratio: auto 300 / 567 !important;
@@ -693,33 +1007,18 @@ canvas {
     -o-border-radius: 3px 3px 0 0;
 }
 
-/* particales show css */
+/* ========================== particales show css ========================== */
 
 
 
+
+
+
+/* ========================== responsive section ================================ */
 @media (max-width:500px) {
-
-    .skill-title::before {
-        content: "";
-        position: absolute;
-        background: var(--bg-color);
-        left: -40%;
-        top: 50%;
-        height: 5%;
-        width: 50%;
-    }
-    
-    .skill-title::after {
-        content: "";
-        position: absolute;
-        background: var(--bg-color);
-        right: -40%;
-        top: 50%;
-        height: 5%;
-        width: 50%;
-    }
 
     #about-me .about-content .content-section img {
         width: 100%;
     }
+
 }
