@@ -3,9 +3,9 @@ console.log("Iftekher Mahmud Pervez")
 // intro section
 let intro =$('.intro');
 setTimeout(() => {
-    intro.removeClass('intro-window');
-    intro.addClass('hide');
-}, 10000);
+    intro.addClass('animate__hinge');
+    // intro.addClass('hide')
+}, 5000);
 // intro section
 
 // footer dynamic date set
