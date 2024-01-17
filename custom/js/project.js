@@ -1,5 +1,7 @@
 console.log("Iftekher Mahmud Pervez")
 
+$(document).ready(function(){
+    
 // category selection
 btn_all =$('.btn-all'),
 btn_bootstrap =$('.btn-bootstrap'),
@@ -87,3 +89,7 @@ btn_others.click(function(){
 
 })
    
+
+})
+
+

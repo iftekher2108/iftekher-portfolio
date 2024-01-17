@@ -1,5 +1,7 @@
 console.log("Iftekher Mahmud Pervez")
 
+$(document).ready(function(){
+
 // intro section
 var intro = $(".intro");
 
@@ -19,3 +21,8 @@ var date = new Date();
 var year = date.getFullYear();
 target.text(year);
 // footer dynamic date set
+
+
+})
+
+
