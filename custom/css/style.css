@@ -99,6 +99,29 @@ p,span,label,button {
 }
 
 
+.theme-btn {
+    position: fixed;
+    z-index: 100;
+    /* background: linear-gradient() var(--dark-hover); */
+    
+    right: 0% !important;
+}
+.theme-btn::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   border-left: 50px solid transparent;
+    border-right: 50px solid  var(--dark-hover);
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid var(--primary-hover); 
+}
+
+.theme-btn .form-switch {
+    font-size: 18px;
+}
+
 /* ========================= intro section ========================== */
 
 
