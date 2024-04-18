@@ -23,6 +23,36 @@ target.text(year);
 // footer dynamic date set
 
 
+// dark theme switch function
+$('.theme-btn input').change(function(){
+
+    if ($(this).prop('checked')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+
+    // Update the theme based on the localStorage value
+    if (localStorage.getItem('theme') === 'dark') {
+        $('html').attr('data-bs-theme', 'dark');
+    } else {
+        $('html').attr('data-bs-theme', 'light');
+    }
+
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+    $('html').attr('data-bs-theme', 'dark');
+    $('.theme-btn input').prop('checked', true); // Check the checkbox if theme is dark
+} else {
+    $('html').attr('data-bs-theme', 'light');
+    $('.theme-btn input').prop('checked', false); // Uncheck the checkbox if theme is light
+}
+
+// dark theme switch function
+
+
+
 })
 
 
