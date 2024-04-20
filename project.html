@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./custom/plugins/fontawesome/css/all.min.css">
     <!-- font awesome 6.5.1 -->
 
+    <!-- slick slide -->
+    <link rel="stylesheet" href="./custom/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./custom/plugins/slick/slick.css">
 
     <link rel="stylesheet" href="./custom/plugins/aos/dist/aos.css" />
     <link rel="stylesheet" href="./custom/css/project.css">
@@ -22,31 +25,50 @@
 </head>
 
 <body>
-        <!-- background web -->
-        <div class="background fixed-top" style="z-index:-10;opacity: 0.5;">
-            <img src="./image/background/background_3.jpg" class="img-fluid" alt="background">
+    <!-- background web -->
+    <div class="background fixed-top" style="z-index:-10;opacity: 0.5;">
+        <img src="./image/background/background_3.png" class="img-fluid" alt="background">
+    </div>
+    <!-- background web -->
+
+
+    <div class="theme-btn px-1 py-3">
+        <div class="form-check form-switch">
+            <input class="form-check-input shadow-none" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
         </div>
-        <!-- background web -->
+    </div>
 
 
-        <!-- feature img -->
-             <div class="feture-img">
+    <!-- feature img -->
+    <div class="feture-img">
+        <div class="slick-slider">
+
+            <div>
+                <img src="./image/background/background_2.jpg" class="w-100 mb-3" alt="feature-img">
+            </div>
+
+            <div>
                 <img src="./image/background/background_1.jpg" class="w-100 mb-3" alt="feature-img">
+            </div>
 
-                </div>
-        <!-- feature image -->
+        </div>
+
+    </div>
+    <!-- feature image -->
 
     <div class="project">
         <div class="project-title">
 
             <h2 class="text-center m-2 py-2">
-                <span class="border-start px-5 border-primary fw-bold border-end border-3">Recently Working Project</span>
+                <span class="border-start px-5 border-primary fw-bold border-end border-3">Recently Working
+                    Project</span>
             </h2>
 
             <h3 class="btn text-white btn-primary m-3"><a href="index.html" class="nav-link"><i
                         class="fa-solid me-2 fa-arrow-left"></i> Back</a></h3>
 
-            
+
 
             <div class="d-flex gap-1 justify-content-center align-items-center flex-wrap m-0 p-0">
                 <div class=" btn-all active btn">
@@ -79,7 +101,7 @@
                                 alt="gallery-image">
                             <div class="p-3">
                                 <h2>Happiness-website design-project</h2>
-                                <p  title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS" >
+                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS">
                                     HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS </p>
                                 <button class="btn btn-primary fw-bold py-1 px-3"><a
                                         href="https://iftekher2108.github.io/happiness-template/"
@@ -97,7 +119,7 @@
                                 alt="gallery-image">
                             <div class="p-3">
                                 <h2>Restuarent website design-project</h2>
-                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS" >
+                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS">
                                     HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS </p>
                                 <button class="btn btn-primary fw-bold py-1 px-3"><a
                                         href="https://iftekher2108.github.io/restaurent-templete/"
@@ -114,7 +136,7 @@
 
                             <div class="p-3">
                                 <h2>Pet Consultency website design-project</h2>
-                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS" >
+                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS">
                                     HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS </p>
                                 <button class="btn btn-primary fw-bold py-1 px-3"><a
                                         href="https://iftekher2108.github.io/pet-consultency-templete/"
@@ -158,6 +180,23 @@
 
                         </div>
 
+                    </div>
+
+                    <!-- US whole sale web -->
+                    <div class="bootstrap col-lg-4 col-md-6 col-sm-12">
+                        <div class="project-hover card">
+                            <img src="./image/us-whole-sale.png" class="img-fluid object-fit-cover" alt="gallery-image">
+                            <div class="p-3">
+                                <h2 title="US whole sale Website" class="text-primary">US Whole sale Website</h2>
+                                <p title="HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS ">
+                                    HTML | CSS| SCSS | BOOTSTRAP | JAVASCRIPT | JQUERY | PLUGINS </p>
+                                <button class="btn btn-primary fw-bold py-1 px-3"><a
+                                        href="https://iftekher2108.github.io/uk-whole-sale/"
+                                        class="nav-link text-white">Live
+                                        View</a></button>
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -221,12 +260,28 @@
     <script src="./custom/plugins/jquery/dist/jquery.min.js"></script>
     <!-- jquery plugins -->
 
+    <!-- slick plugins -->
+    <script src="./custom/plugins/slick/slick.min.js"></script>
+    <!-- slick plugins -->
+
     <!-- custom javascript -->
     <script src="./custom/js/project.js"></script>
     <!-- custom javascript  -->
 
     <!-- aos plugin -->
     <script src="./custom/plugins/aos/dist/aos.js"></script>
+
+    <script>
+        $('.slick-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+        })
+    </script>
 
     <!-- aos init -->
     <script>
