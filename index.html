@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="./custom/plugins/fontawesome/css/all.min.css">
     <!-- font awesome 6.5.1 -->
 
+    <!-- animate css -->
     <link rel="stylesheet" href="./custom/plugins/animate/animate.min.css">
+
+    <!-- ripple -->
+    <link rel="stylesheet" href="./custom/plugins/ripple/ripple.min.css">
 
     <!-- aos plugins-->
     <link rel="stylesheet" href="./custom/plugins/aos/dist/aos.css" />
@@ -44,7 +48,7 @@
             <img src="./image/banner.jpg" class="img-fluid rounded-3" alt="profile image">
         </div>
         <h1 class="text-uppercase border-2 border-white border-end text-white ">
-            .....Iftekher Mahmud.....
+            ..... Iftekher Mahmud .....
         </h1>
         <div class="px-8 mx-5 border-2 border-bottom border-white" style="width:50%"></div>
         <h3 class="text-uppercase mt-2 text-white">Full Stack Web Dev</h3>
@@ -53,25 +57,25 @@
     <header>
         <nav id="section-content"
             class="px-3 shadow bg-gradient bg-primary py-2 d-flex align-items-center gap-3 rounded-pill">
-            <a href="#home" title="Home" class="nav-link p-0 m-0 rounded-3 active">
+            <a href="#home" title="Home" class="nav-link p-0 m-0 active rounded-pill">
                 <li class="list-group-item "><i class="fa-solid fa-user"></i> <span class="sr-only">(current)</span>
                 </li>
             </a>
 
-            <a href="#about-me" title="About Me" class="nav-link p-0 m-0  rounded-3">
+            <a href="#about-me" title="About Me" class="nav-link p-0 m-0 rounded-pill">
                 <li class="list-group-item ">
                     <i class="fa-brands fa-servicestack"></i></li>
             </a>
 
-            <a href="#project" title="project" class="nav-link p-0 m-0 rounded-3">
+            <a href="#project" title="project" class="nav-link p-0 m-0 rounded-pill">
                 <li class="list-group-item "> <i class="fa-regular fa-image"></i></li>
             </a>
 
-            <a href="#skill" title="Learned Skill" class="nav-link p-0 m-0 rounded-3">
+            <a href="#skill" title="Learned Skill" class="nav-link p-0 m-0 rounded-pill">
                 <li class="list-group-item "> <i class="fa-solid fa-user-tie"></i></li>
             </a>
 
-            <a href="#contact" title="Contact" class="nav-link p-0 m-0 rounded-3">
+            <a href="#contact" title="Contact" class="nav-link p-0 m-0 rounded-pill">
                 <li class="list-group-item "> <i class="fa-solid fa-network-wired"></i></li>
             </a>
         </nav>
@@ -665,7 +669,6 @@
 
     <!-- particles js plugins -->
     <script src="./custom/plugins/particles/particles.js"></script>
-    <script src="./custom/plugins/particles/demo/js/lib/stats.js"></script>
 
     <!-- particle js init -->
     <script>
@@ -674,6 +677,10 @@
             // console.log('callback - particles.js config loaded');
         });
     </script>
+
+
+    <!-- ripple js -->
+    <script src="./custom/plugins/ripple/ripple.min.js"></script>
 
 
     <!-- custom js -->
@@ -690,9 +697,9 @@
             initClassName: 'aos-init',
             animatedClassName: 'aos-animate',
             offset: 120,
-            delay: 200,
-            duration: 500,
-            easing: 'ease-in-out',
+            delay: 300,
+            duration: 700,
+            easing: 'ease',
             mirror: false,
             once: true
         });
