@@ -3,6 +3,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.2",
     "jquery": "^3.7.1",
+    "particles.js": "^2.0.0",
     "slick-carousel": "^1.8.1"
   }
 }

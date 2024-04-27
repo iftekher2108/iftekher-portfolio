@@ -179,8 +179,22 @@ nav#section-content {
     -o-transform: translateX(-50%);
 
     li {
-        padding: .6rem;
+        // padding: .6rem;
+        height: 40px;
+        width: 40px;
+        position: relative;
         cursor: pointer;
+
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+}
     }
 }
 
@@ -197,6 +211,9 @@ nav#section-content {
     -o-border-radius: 50px !important;
     animation: scale .7s ease-in-out infinite alternate;
     -webkit-animation: scale .7s ease-in-out infinite alternate;
+    &:is(:hover,:focus) {
+        color: $dark-hover;
+    }
 }
 
 @keyframes scale {
