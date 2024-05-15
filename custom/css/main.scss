@@ -115,8 +115,9 @@ body {
     user-select: none !important;
 }
 
+
 .intro {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background: rgb(29, 20, 20);
     top: 0;
@@ -426,7 +427,7 @@ nav#section-content {
 .project-content {
     .project-photo {
         .card {
-            h2 {
+            h4 {
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -434,6 +435,7 @@ nav#section-content {
             }
 
             p {
+                font-size: 10px;
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -473,7 +475,8 @@ nav#section-content {
 
             button {
                 position: absolute;
-                padding: 1rem 2rem !important;
+                font-size: 12px;
+                padding: 0.5rem 1rem !important;
                 top: 50%;
                 left: 50%;
                 border: none;

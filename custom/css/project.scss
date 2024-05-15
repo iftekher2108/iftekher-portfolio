@@ -118,7 +118,7 @@ body {
 .project-content {
     .project-photo {
         .card {
-            h2 {
+            h4 {
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -126,6 +126,7 @@ body {
             }
 
             p {
+                font-size: 10px;
                 overflow: hidden;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -165,7 +166,8 @@ body {
 
             button {
                 position: absolute;
-                padding: 1rem 2rem !important;
+                font-size: 12px;
+                padding: 0.5rem 1rem !important;
                 top: 50%;
                 left: 50%;
                 border: none;
