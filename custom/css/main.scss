@@ -6,6 +6,17 @@
     margin: 0;
 }
 
+@import '../../scss/custom-bootstrap.min.css';
+
+@import '../../custom/plugins/fontawesome/css/all.min.css';
+
+@import '../../custom/plugins/animate/animate.min.css';
+
+@import '../../custom/plugins/ripple/ripple.min.css';
+
+@import '../../custom/plugins/aos/dist/aos.css';
+
+
 // variables
 $primary: #6495ED;
 $primary-hover: #407be9;
