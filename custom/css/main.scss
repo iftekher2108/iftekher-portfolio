@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@import '../../scss/custom-bootstrap.min';
-
-@import '../../custom/plugins/fontawesome/css/all.min.css';
-
-@import '../../custom/plugins/animate/animate.min';
-
-@import '../../custom/plugins/ripple/ripple.min';
-
-@import '../../custom/plugins/aos/dist/aos';
-
+@import '../../scss/custom-bootstrap.min.css';
+@import '../plugins/fontawesome/css/all.min.css';
+@import '../plugins/animate/animate.min.css';
+@import '../plugins/ripple/ripple.min.css';
+@import '../plugins/aos/dist/aos.css';
 // universal reset
 * {
     padding: 0;
@@ -583,11 +577,11 @@ nav#section-content {
         width: 160px;
 
         &:hover {
-            transform: perspective(400px) rotateX(40deg);
-            -webkit-transform: perspective(400px) rotateX(40deg);
-            -moz-transform: perspective(400px) rotateX(40deg);
-            -ms-transform: perspective(400px) rotateX(40deg);
-            -o-transform: perspective(400px) rotateX(40deg);
+            transform: perspective(450px) rotateX(15deg) scale(1.1);
+            -webkit-transform: perspective(450px) rotateX(15deg) scale(1.1);
+            -moz-transform: perspective(450px) rotateX(15deg) scale(1.1);
+            -ms-transform: perspective(450px) rotateX(15deg) scale(1.1);
+            -o-transform: perspective(450px) rotateX(15deg) scale(1.1);
 }
     }
 } 
