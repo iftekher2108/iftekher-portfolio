@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    $.getScript("../../custom/bootstrap/js/bootstrap.bundle.min.js");
-    $.getScript("../../custom/plugins/ripple/ripple.min.js",function() {
         $.ripple(".btn", {
             debug: !1,
             on: "mousedown",
@@ -13,8 +11,6 @@ $(document).ready(function () {
             },
             easing: "linear",
           }); 
-    })
-    $.getScript("../../custom/plugins/slick/slick.min.js",function(){
         $('.slick-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -24,8 +20,7 @@ $(document).ready(function () {
             autoplay: true,
             autoplaySpeed: 1500,
         })
-    })
-    $.getScript("../../custom/plugins/aos/dist/aos.js",function(){
+
         AOS.init({
             startEvent: 'DOMContentLoaded',
             initClassName: 'aos-init',
@@ -37,7 +32,7 @@ $(document).ready(function () {
             mirror: false,
             once: true
         });
-    })
+
   $("img").on("mousedown", function (t) {
     t.preventDefault();
   }),
@@ -99,7 +94,7 @@ $(document).ready(function () {
       : ($("html").attr("data-bs-theme", "light"),
         $(".theme-btn input").prop("checked", !1))
 
-}),
+})
   $(document).on("contextmenu", function (t) {
     t.preventDefault();
   }),

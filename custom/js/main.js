@@ -1,6 +1,4 @@
 $(document).ready(function () {
-$.getScript("../../custom/bootstrap/js/bootstrap.bundle.min.js");
-$.getScript("../../custom/plugins/aos/dist/aos.js", function() {
  AOS.init({
     startEvent: "DOMContentLoaded",
     initClassName: "aos-init",
@@ -12,9 +10,6 @@ $.getScript("../../custom/plugins/aos/dist/aos.js", function() {
     mirror: false,
     once: true,
   });
-})
-$.getScript("../../custom/plugins/ripple/ripple.min.js",function() {
-    
     $.ripple(".btn", {
         debug: !1,
         on: "mousedown",
@@ -27,13 +22,7 @@ $.getScript("../../custom/plugins/ripple/ripple.min.js",function() {
         },
         easing: "linear",
       });
-})
-$.getScript("../../custom/plugins/particles/particles.js",function(){
-    particlesJS.load("particles", "../../particles.json", function () {
-        // console.log('callback - particles.js config loaded');
-      });
-})
-$.getScript("../../custom/plugins/typed/dist/typed.umd.js",function(){
+
     new Typed(".skill-group .skill-base h3", {
         strings: [
           "Website Developer",
@@ -49,7 +38,7 @@ $.getScript("../../custom/plugins/typed/dist/typed.umd.js",function(){
         backSpeed: 60,
         loop: !0,
       })
-})
+
 localStorage.setItem("theme", "dark");
   var e = $(".intro");
   setTimeout(function () {
@@ -77,6 +66,9 @@ localStorage.setItem("theme", "dark");
         $(".theme-btn input").prop("checked", !0))
       : ($("html").attr("data-bs-theme", "light"),
         $(".theme-btn input").prop("checked", !1))
+        particlesJS.load('particles', './custom/js/particles.json', function() {
+            // console.log('callback - particles.js config loaded');
+        }); 
 })
 
   $(document).on("contextmenu", function (e) {
